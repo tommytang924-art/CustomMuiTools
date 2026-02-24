@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tommytang/Documents/myproject/muitools/src/app/%28login%29/%5B...notFound%5D/page.tsx"],"sourcesContent":["import { notFound } from 'next/navigation';\r\n\r\nexport default function CatchAll() {\r\n  notFound();\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AAAA;;AAEe,SAAS;IACtB,IAAA,iMAAQ;AACV"}}]
+}

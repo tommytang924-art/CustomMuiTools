@@ -1,0 +1,3 @@
+{
+  "/(login)/[...notFound]/page": "app/(login)/[...notFound]/page.js"
+}

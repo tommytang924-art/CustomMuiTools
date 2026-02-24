@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tommytang/Documents/myproject/muitools/src/components/page/Welcome.tsx"],"sourcesContent":["// src/app/[locale]/home/page.tsx\r\n\"use client\";\r\nimport { Box, Typography } from \"@mui/material\";\r\nexport default function Welcome() {\r\n  return (\r\n    <>\r\n      <Box\r\n        sx={{\r\n          display: \"flex\",\r\n          flexDirection: \"column\",\r\n          alignItems: \"center\",\r\n          justifyContent: \"center\",\r\n          minHeight: \"80vh\",\r\n          padding: \"0 .5rem\"\r\n        }}\r\n      >\r\n        <Typography\r\n          sx={{ fontSize: \"1.4rem\", textAlign: \"center\", fontWeight: \"650\" }}\r\n        >\r\n          Welcome to MUI mintools portal\r\n        </Typography>\r\n      </Box>\r\n    </>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEA;AAAA;AAFA,iCAAiC;AACjC;;;;AAEe,SAAS;IACtB,qBACE;kBACE,cAAA,oQAAC,kMAAG;YACF,IAAI;gBACF,SAAS;gBACT,eAAe;gBACf,YAAY;gBACZ,gBAAgB;gBAChB,WAAW;gBACX,SAAS;YACX;sBAEA,cAAA,oQAAC,8NAAU;gBACT,IAAI;oBAAE,UAAU;oBAAU,WAAW;oBAAU,YAAY;gBAAM;0BAClE;;;;;;;;;;;;AAMT;KArBwB"}}]
+}

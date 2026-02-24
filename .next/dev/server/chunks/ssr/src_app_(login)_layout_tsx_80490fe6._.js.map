@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tommytang/Documents/myproject/muitools/src/app/%28login%29/layout.tsx"],"sourcesContent":["import AppLayout from \"@/components/layout/AppLayout\";\r\n\r\nexport default async function LoginLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return <>{children}</>;\r\n}"],"names":[],"mappings":";;;;;;AAEe,eAAe,YAAY,EACxC,QAAQ,EAGT;IACC,qBAAO;kBAAG;;AACZ"}}]
+}
