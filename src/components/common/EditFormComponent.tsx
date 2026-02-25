@@ -70,7 +70,6 @@ export default function EditFormComponent({ form, fields, title, handleUpdate }:
                                                     margin="none"
                                                     form={form}
                                                     formFieldName={fieldConfig.name}
-                                                    useLabel={true}
                                                     disabled={fieldConfig.disabled}
                                                     {
                                                         ...fieldConfig.multline && (

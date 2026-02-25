@@ -154,7 +154,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaRowOutlined"
                             fullWidth={false}
-                            useLabel={true}
                             label="Outlined Row"
                             variant="outlined"
                             rows={10}
@@ -164,7 +163,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaMaxRowOutlined"
                             fullWidth={false}
-                            useLabel={true}
                             label="Outlined MaxRow"
                             variant="outlined"
                             maxRows={4}
@@ -176,7 +174,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaRowFilled"
                             fullWidth={false}
-                            useLabel={true}
                             label="Filled Row"
                             variant="filled"
                             rows={10}
@@ -186,7 +183,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaMaxRowFilled"
                             fullWidth={false}
-                            useLabel={true}
                             label="Filled MaxRow"
                             variant="filled"
                             maxRows={4}
@@ -198,7 +194,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaRowStandard"
                             fullWidth={false}
-                            useLabel={true}
                             label="Standard Row"
                             variant="standard"
                             rows={10}
@@ -208,7 +203,6 @@ export default function TextArea() {
                             form={form}
                             formFieldName="textAreaMaxRowStandard"
                             fullWidth={false}
-                            useLabel={true}
                             label="Standard MaxRow"
                             variant="standard"
                             maxRows={4}

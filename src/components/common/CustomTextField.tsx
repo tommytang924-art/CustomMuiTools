@@ -20,7 +20,6 @@ interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" |
   form: UseFormReturn<any>;
   inputTitle?: string;
   formFieldName: string; // name of formValue
-  useLabel: boolean;
   multiline?: boolean; // Explicit for textarea mode
   rows?: number; // Renamed to match MUI
   maxRows?: number; // Renamed to match MUI
@@ -32,6 +31,7 @@ interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" |
   hoverBorderColor?: string;
   focusedBorderColor?: string;
   margin?: "none" | "normal" | "dense";
+  inputTitleColor?: string;
 }
 
 export default function CustomTextField({
@@ -48,7 +48,6 @@ export default function CustomTextField({
   form,
   inputTitle,
   formFieldName,
-  useLabel,
   multiline: explicitMultiline,
   rows,
   maxRows,
@@ -60,6 +59,7 @@ export default function CustomTextField({
   hoverBorderColor,
   focusedBorderColor,
   margin = "dense",
+  inputTitleColor = "black",
   ...rest // Spread remaining TextFieldProps
 }: CustomTextFieldProps) {
 
@@ -73,11 +73,13 @@ export default function CustomTextField({
         control={form.control}
         render={({ field, fieldState: { error } }) => (
           <>
-            {inputTitle && <InputLabel>{inputTitle}</InputLabel>}
+            {inputTitle && <InputLabel sx={{color:`${inputTitleColor}`}}>{inputTitle}</InputLabel>}
             <TextField
               {...field}
               {...rest}
-              {...(useLabel && { label })}
+              // {...(useLabel && { label })}
+              
+              label={label ? label : ""}
               placeholder={placeholder}
               variant={variant}
               size={size}

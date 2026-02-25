@@ -47,19 +47,28 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 }
 
 
-// Validate ../../../src/app/(login)/Table/page.tsx
+// Validate ../../../src/app/(login)/[...notFound]/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/Table">> = Specific
-  const handler = {} as typeof import("../../../src/app/(login)/table/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/[...notFound]">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/[...notFound]/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
 }
 
-// Validate ../../../src/app/(login)/[...notFound]/page.tsx
+// Validate ../../../src/app/(login)/datePicker/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/[...notFound]">> = Specific
-  const handler = {} as typeof import("../../../src/app/(login)/[...notFound]/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/datePicker">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/datePicker/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/(login)/datepicker/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/datepicker">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/datepicker/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

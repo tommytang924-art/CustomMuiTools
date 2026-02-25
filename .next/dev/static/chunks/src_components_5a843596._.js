@@ -76,7 +76,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 function CustomTextField(_0) {
-    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, IconComponent = _0.IconComponent, _0_iconPosition = _0.iconPosition, iconPosition = _0_iconPosition === void 0 ? "start" : _0_iconPosition, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, useLabel = _0.useLabel, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 15 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 18 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 2 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, rest // Spread remaining TextFieldProps
+    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, IconComponent = _0.IconComponent, _0_iconPosition = _0.iconPosition, iconPosition = _0_iconPosition === void 0 ? "start" : _0_iconPosition, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 15 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 18 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 2 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, _0_inputTitleColor = _0.inputTitleColor, inputTitleColor = _0_inputTitleColor === void 0 ? "black" : _0_inputTitleColor, rest // Spread remaining TextFieldProps
      = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_without_properties$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])(_0, [
         "placeholder",
         "size",
@@ -91,7 +91,6 @@ function CustomTextField(_0) {
         "form",
         "inputTitle",
         "formFieldName",
-        "useLabel",
         "multiline",
         "rows",
         "maxRows",
@@ -102,7 +101,8 @@ function CustomTextField(_0) {
         "borderWidth",
         "hoverBorderColor",
         "focusedBorderColor",
-        "margin"
+        "margin",
+        "inputTitleColor"
     ]);
     _s();
     var theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
@@ -116,15 +116,18 @@ function CustomTextField(_0) {
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
                         inputTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputLabel$2f$InputLabel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputLabel$3e$__["InputLabel"], {
+                            sx: {
+                                color: "".concat(inputTitleColor)
+                            },
                             children: inputTitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/common/CustomTextField.tsx",
                             lineNumber: 76,
                             columnNumber: 28
                         }, void 0),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, field, rest, useLabel && {
-                            label: label
-                        }), {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, field, rest), {
+                            // {...(useLabel && { label })}
+                            label: label ? label : "",
                             placeholder: placeholder,
                             variant: variant,
                             size: size,
@@ -153,12 +156,12 @@ function CustomTextField(_0) {
                                     position: iconPosition,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconComponent, {}, void 0, false, {
                                         fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 114,
                                         columnNumber: 25
                                     }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 113,
                                     columnNumber: 23
                                 }, void 0))), {
                                     sx: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({
@@ -915,7 +918,6 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaRowOutlined",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Outlined Row",
                                         variant: "outlined",
                                         rows: 10
@@ -929,13 +931,12 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaMaxRowOutlined",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Outlined MaxRow",
                                         variant: "outlined",
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 161,
                                         columnNumber: 25
                                     }, this)
                                 ]
@@ -956,13 +957,12 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaRowFilled",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Filled Row",
                                         variant: "filled",
                                         rows: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 172,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -970,19 +970,18 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaMaxRowFilled",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Filled MaxRow",
                                         variant: "filled",
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 181,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                lineNumber: 173,
+                                lineNumber: 171,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -997,13 +996,12 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaRowStandard",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Standard Row",
                                         variant: "standard",
                                         rows: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 192,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1011,19 +1009,18 @@ function TextArea() {
                                         form: form,
                                         formFieldName: "textAreaMaxRowStandard",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Standard MaxRow",
                                         variant: "standard",
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 206,
+                                        lineNumber: 201,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                lineNumber: 195,
+                                lineNumber: 191,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -1050,12 +1047,12 @@ function TextArea() {
                     setContent: changeTA
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                    lineNumber: 227,
+                    lineNumber: 221,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                lineNumber: 219,
+                lineNumber: 213,
                 columnNumber: 13
             }, this)
         ]
@@ -1527,13 +1524,11 @@ function IconTextField() {
                                 form: form,
                                 formFieldName: "username",
                                 fullWidth: false,
-                                useLabel: false,
                                 inputTitle: "Username",
                                 variant: "outlined",
                                 iconPosition: "start",
                                 IconComponent: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Person$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                                margin: "none",
-                                label: "username"
+                                margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
                                 lineNumber: 91,
@@ -1544,8 +1539,6 @@ function IconTextField() {
                                 form: form,
                                 formFieldName: "password",
                                 fullWidth: false,
-                                useLabel: false,
-                                label: "password",
                                 inputTitle: "Password",
                                 variant: "outlined",
                                 iconPosition: "end",
@@ -1553,7 +1546,7 @@ function IconTextField() {
                                 margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                                lineNumber: 104,
+                                lineNumber: 102,
                                 columnNumber: 25
                             }, this)
                         ]
@@ -1579,12 +1572,12 @@ function IconTextField() {
                         setContent: changeIconCode
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                        lineNumber: 127,
+                        lineNumber: 123,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 119,
+                    lineNumber: 115,
                     columnNumber: 17
                 }, this)
             ]

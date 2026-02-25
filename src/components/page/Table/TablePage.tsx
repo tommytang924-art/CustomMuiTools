@@ -2,7 +2,7 @@
 
 import { Box, Container, Paper } from "@mui/material";
 import { useState } from "react";
-import Table from "./Table";
+import Table from "./TableDemo1";
 
 
 export default function TablePageComponent() {

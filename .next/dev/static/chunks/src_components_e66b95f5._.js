@@ -465,7 +465,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 function CustomTextField(_0) {
-    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, IconComponent = _0.IconComponent, _0_iconPosition = _0.iconPosition, iconPosition = _0_iconPosition === void 0 ? "start" : _0_iconPosition, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, useLabel = _0.useLabel, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 15 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 18 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 2 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, rest // Spread remaining TextFieldProps
+    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, IconComponent = _0.IconComponent, _0_iconPosition = _0.iconPosition, iconPosition = _0_iconPosition === void 0 ? "start" : _0_iconPosition, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 15 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 18 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 2 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, _0_inputTitleColor = _0.inputTitleColor, inputTitleColor = _0_inputTitleColor === void 0 ? "black" : _0_inputTitleColor, rest // Spread remaining TextFieldProps
      = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_without_properties$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])(_0, [
         "placeholder",
         "size",
@@ -480,7 +480,6 @@ function CustomTextField(_0) {
         "form",
         "inputTitle",
         "formFieldName",
-        "useLabel",
         "multiline",
         "rows",
         "maxRows",
@@ -491,7 +490,8 @@ function CustomTextField(_0) {
         "borderWidth",
         "hoverBorderColor",
         "focusedBorderColor",
-        "margin"
+        "margin",
+        "inputTitleColor"
     ]);
     _s();
     var theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
@@ -505,15 +505,18 @@ function CustomTextField(_0) {
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
                         inputTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputLabel$2f$InputLabel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputLabel$3e$__["InputLabel"], {
+                            sx: {
+                                color: "".concat(inputTitleColor)
+                            },
                             children: inputTitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/common/CustomTextField.tsx",
                             lineNumber: 76,
                             columnNumber: 28
                         }, void 0),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, field, rest, useLabel && {
-                            label: label
-                        }), {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, field, rest), {
+                            // {...(useLabel && { label })}
+                            label: label ? label : "",
                             placeholder: placeholder,
                             variant: variant,
                             size: size,
@@ -540,25 +543,14 @@ function CustomTextField(_0) {
                             slotProps: {
                                 input: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, IconComponent && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_define_property$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, iconPosition === "start" ? "startAdornment" : "endAdornment", /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputAdornment$2f$InputAdornment$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputAdornment$3e$__["InputAdornment"], {
                                     position: iconPosition,
-                                    sx: {
-                                        cursor: 'pointer'
-                                    },
-                                    onClick: function(e) {
-                                        var _this;
-                                        // Focus the input when clicking the adornment
-                                        var input = (_this = e.currentTarget.parentElement) === null || _this === void 0 ? void 0 : _this.querySelector('input, textarea');
-                                        if (input) {
-                                            input.focus();
-                                        }
-                                    },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconComponent, {}, void 0, false, {
                                         fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 114,
                                         columnNumber: 25
                                     }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 113,
                                     columnNumber: 23
                                 }, void 0))), {
                                     sx: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({
@@ -792,7 +784,6 @@ function EditFormComponent(param) {
                                                         margin: "none",
                                                         form: form,
                                                         formFieldName: fieldConfig.name,
-                                                        useLabel: true,
                                                         disabled: fieldConfig.disabled
                                                     }, fieldConfig.multline && {
                                                         multiline: true,
@@ -856,12 +847,12 @@ function EditFormComponent(param) {
                     children: "Update"
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/EditFormComponent.tsx",
-                    lineNumber: 90,
+                    lineNumber: 89,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/EditFormComponent.tsx",
-                lineNumber: 89,
+                lineNumber: 88,
                 columnNumber: 13
             }, this)
         ]

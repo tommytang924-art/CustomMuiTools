@@ -93,21 +93,17 @@ export default function IconTextField() {
                             form={form}
                             formFieldName="username"
                             fullWidth={false}
-                            useLabel={false}
                             inputTitle="Username"
                             variant="outlined"
                             iconPosition="start"
                             IconComponent={PersonIcon}
                             margin="none"
-                            label="username"
                         />
                         <CustomTextField
                             placeholder="password"
                             form={form}
                             formFieldName="password"
                             fullWidth={false}
-                            useLabel={false}
-                            label="password"
                             inputTitle="Password"
                             variant="outlined"
                             iconPosition="end"
