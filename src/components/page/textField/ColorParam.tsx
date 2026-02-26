@@ -41,13 +41,12 @@ export default function ColorParam() {
     })
 
     const [ColorParamCode, setCPCode] = useState<string>(`
-         <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>
+                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>
                     <CustomTextField
                         placeholder="Outlined Background Color"
                         form={form}
                         formFieldName="OlbgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Background Color"
                         variant="outlined"
                         bgColor="lightblue"
@@ -57,7 +56,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FibgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Background Color"
                         variant="filled"
                         bgColor="lightblue"
@@ -67,7 +65,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdbgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Background Color"
                         variant="standard"
                         bgColor="lightblue"
@@ -79,7 +76,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OltextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Text Color"
                         variant="outlined"
                         textColor="red"
@@ -89,7 +85,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FitextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Text Color"
                         variant="filled"
                         textColor="red"
@@ -99,7 +94,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdtextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Text Color"
                         variant="standard"
                         textColor="red"
@@ -111,7 +105,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OlbrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Border Color"
                         variant="outlined"
                         borderColor="#FFC107"
@@ -121,7 +114,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FibrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Border Color"
                         variant="filled"
                         borderColor="#FFC107"
@@ -131,19 +123,17 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdbrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Border Color"
                         variant="standard"
                         borderColor="#FFC107"
                     />
                 </Box>
-                 <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>
+                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>
                     <CustomTextField
                         placeholder="Outlined Label Color"
                         form={form}
                         formFieldName="OlLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Label Color"
                         variant="outlined"
                         labelColor="#ff0707ff"
@@ -153,7 +143,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FiLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Label Color"
                         variant="filled"
                         labelColor="#ff0707ff"
@@ -163,7 +152,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Label Color"
                         variant="standard"
                         labelColor="#ff0707ff"
@@ -186,7 +174,7 @@ export default function ColorParam() {
                     display: "flex",
                     flexDirection: "column"
                 }} >
-                <h2>Different Color Param in TextField</h2>
+                <h3>Different Color Param in TextField</h3>
                 <br />
                 There are four param can be set - textColor, borderColor, labelColor, bgColor
                 <br />
@@ -199,7 +187,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OlbgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Background Color"
                         variant="outlined"
                         bgColor="lightblue"
@@ -209,7 +196,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FibgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Background Color"
                         variant="filled"
                         bgColor="lightblue"
@@ -219,7 +205,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdbgColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Background Color"
                         variant="standard"
                         bgColor="lightblue"
@@ -231,7 +216,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OltextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Text Color"
                         variant="outlined"
                         textColor="red"
@@ -241,7 +225,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FitextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Text Color"
                         variant="filled"
                         textColor="red"
@@ -251,7 +234,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdtextColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Text Color"
                         variant="standard"
                         textColor="red"
@@ -263,7 +245,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OlbrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Border Color"
                         variant="outlined"
                         borderColor="#FFC107"
@@ -273,7 +254,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FibrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Border Color"
                         variant="filled"
                         borderColor="#FFC107"
@@ -283,7 +263,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdbrColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Border Color"
                         variant="standard"
                         borderColor="#FFC107"
@@ -295,7 +274,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="OlLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Outlined Label Color"
                         variant="outlined"
                         labelColor="#ff0707ff"
@@ -305,7 +283,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="FiLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Filled Label Color"
                         variant="filled"
                         labelColor="#ff0707ff"
@@ -315,7 +292,6 @@ export default function ColorParam() {
                         form={form}
                         formFieldName="SdLbColor"
                         fullWidth={false}
-                        useLabel={true}
                         label="Standard Label Color"
                         variant="standard"
                         labelColor="#ff0707ff"

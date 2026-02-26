@@ -36,7 +36,6 @@ export default function IconTextField() {
                 form={form}
                 formFieldName="username"
                 fullWidth={false}
-                useLabel={true}
                 inputTitle="Username"
                 variant="outlined"
                 iconPosition="start"
@@ -49,9 +48,7 @@ export default function IconTextField() {
                 form={form}
                 formFieldName="password"
                 fullWidth={false}
-                useLabel={true}
-                label="password"
-                 inputTitle="Password"
+                inputTitle="Password"
                 variant="outlined"
                 iconPosition="end"
                 IconComponent={KeyIcon}
@@ -76,7 +73,7 @@ export default function IconTextField() {
                     borderRadius: '8px',
 
                 }} >
-                <h2>Icon</h2>
+                <h3>Icon</h3>
                 <br />
                 There are two param:
                 <br />

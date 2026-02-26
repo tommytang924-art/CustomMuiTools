@@ -18,7 +18,7 @@ export default function DatePickerPage() {
                     sx={{
                         
                         borderRadius: '8px',
-                        overflow: 'hidden', // To handle inner borders cleanly
+                       
                         mb:3,
                     }} >
                     <h3>Date Picker</h3>

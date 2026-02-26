@@ -7,7 +7,7 @@
     },
     {
       "menu_id": "2",
-      "menu_name": "Date picker",
+      "menu_name": "Date / Time picker",
       "uri": "/datePicker"
     },
     {
@@ -16,8 +16,8 @@
       "uri": "/table"
     },
     {
-      "menu_id":"4",
-      "menu_name": "form",
+      "menu_id": "4",
+      "menu_name": "Form",
       "uri": "/form"
     }
   ],
@@ -30,15 +30,39 @@
     },
     {
       "menu_id": "sub2",
-      "menu_name": "Select Field",
+      "menu_name": "Select",
       "parent_id": "1",
-      "uri": "/inputField/selectField"
+      "uri": "/inputField/select"
     },
     {
       "menu_id": "sub3",
       "menu_name": "Number Field",
       "parent_id": "1",
       "uri": "/inputField/numberField"
+    },
+     {
+      "menu_id": "sub4",
+      "menu_name": "Date Picker",
+      "parent_id": "2",
+      "uri": "/dateAndTimePicker/datePicker"
+    },
+    {
+      "menu_id": "sub5",
+      "menu_name": "Date Range Picker",
+      "parent_id": "2",
+      "uri": "/dateAndTimePicker/dateRange"
+    },
+    {
+      "menu_id": "sub6",
+      "menu_name": "Time Picker",
+      "parent_id": "2",
+      "uri": "/dateAndTimePicker/timePicker"
+    },
+     {
+      "menu_id": "sub7",
+      "menu_name": "Date Time Picker",
+      "parent_id": "2",
+      "uri": "/dateAndTimePicker/datetimePicker"
     }
   ]
 }

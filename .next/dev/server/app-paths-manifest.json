@@ -1,7 +1,6 @@
 {
-  "/(login)/[...notFound]/page": "app/(login)/[...notFound]/page.js",
-  "/(login)/datePicker/page": "app/(login)/datePicker/page.js",
-  "/(login)/home/page": "app/(login)/home/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/login/page": "app/login/page.js"
+  "/(login)/inputField/numberField/page": "app/(login)/inputField/numberField/page.js",
+  "/(login)/inputField/select/page": "app/(login)/inputField/select/page.js",
+  "/(login)/inputField/textField/page": "app/(login)/inputField/textField/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

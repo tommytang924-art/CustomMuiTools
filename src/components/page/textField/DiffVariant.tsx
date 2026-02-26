@@ -36,98 +36,92 @@ export default function DiffVariant() {
 
 
     const [DiffVariantCode, setDVCode] = useState<string>(`
-        <Box
-            component="form"
-            onSubmit={form.handleSubmit(handleSubmit)}
-            sx={{
-                marginTop: "24px",
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "flex-end",           
-                gap: "32px",                    
-                }}
-        >
+                <Box
+                    component="form"
+                    onSubmit={form.handleSubmit(handleSubmit)}
+                    sx={{
+                        marginTop: "24px",
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "flex-end",           // ← key: align baselines
+                        gap: "32px",                      // wider gap looks better in demos
+                    }}
+                >
 
-    {/* Column 1 – Outlined */}
-    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      <CustomTextField
-        placeholder="Outlined"
-        form={form}
-        formFieldName="outlined"
-        variant="outlined"
-        size="medium"
-        fullWidth
-        useLabel={false}
-        inputTitle="Outlined"           // keep if you want title above
-      />
-      <CustomTextField
-        placeholder="Outlined With Label"
-        form={form}
-        formFieldName="outLinedWithLabel"
-        variant="outlined"
-        size="medium"
-        fullWidth
-        useLabel={true}
-        label="Outlined With Label"
-      />
-    </Box>
+                    {/* Column 1 – Outlined */}
+                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        <CustomTextField
+                            placeholder="Outlined"
+                            form={form}
+                            formFieldName="outlined"
+                            variant="outlined"
+                            size="medium"
+                            fullWidth
+                            inputTitle="Outlined"           // keep if you want title above
+                        />
+                        <CustomTextField
+                            placeholder="Outlined With Label"
+                            form={form}
+                            formFieldName="outLinedWithLabel"
+                            variant="outlined"
+                            size="medium"
+                            fullWidth
+                            label="Outlined With Label"
+                        />
+                    </Box>
 
-    {/* Column 2 – Standard */}
-    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      <CustomTextField
-        placeholder="Standard"
-        form={form}
-        formFieldName="standard"
-        variant="standard"
-        size="medium"
-        fullWidth
-        useLabel={false}
-        inputTitle="Standard"
-      />
-      <CustomTextField
-        placeholder="Standard With Label"
-        form={form}
-        formFieldName="standardWithLabel"
-        variant="standard"
-        size="medium"
-        fullWidth
-        useLabel={true}
-        label="Standard With Label"
-      />
-    </Box>
+                    {/* Column 2 – Standard */}
+                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        <CustomTextField
+                            placeholder="Standard"
+                            form={form}
+                            formFieldName="standard"
+                            variant="standard"
+                            size="medium"
+                            fullWidth
+                            inputTitle="Standard"
+                        />
+                        <CustomTextField
+                            placeholder="Standard With Label"
+                            form={form}
+                            formFieldName="standardWithLabel"
+                            variant="standard"
+                            size="medium"
+                            fullWidth
+                            label="Standard With Label"
+                        />
+                    </Box>
 
-    {/* Column 3 – Filled */}
-    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      <CustomTextField
-        placeholder="Filled"
-        form={form}
-        formFieldName="filled"
-        variant="filled"
-        size="medium"
-        fullWidth
-        useLabel={false}
-        inputTitle="Filled"
-      />
-      <CustomTextField
-        placeholder="Filled With Label"
-        form={form}
-        formFieldName="filledWithLabel"
-        variant="filled"
-        size="medium"
-        fullWidth
-        useLabel={true}
-        label="Filled With Label"
-      />
-    </Box>
+                    {/* Column 3 – Filled */}
+                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        <CustomTextField
+                            placeholder="Filled"
+                            form={form}
+                            formFieldName="filled"
+                            variant="filled"
+                            size="medium"
+                            fullWidth
+                            inputTitle="Filled"
+                        />
+                        <CustomTextField
+                            placeholder="Filled With Label"
+                            form={form}
+                            formFieldName="filledWithLabel"
+                            variant="filled"
+                            size="medium"
+                            fullWidth
+                            label="Filled With Label"
+                        />
+                    </Box>
+                
+                <Box sx={{ mt: 3 }}>
+                    <Button type="submit" variant="outlined">
+                        Submit
+                    </Button>
+                </Box>
+                </Box>
 
-  </Box>
-
-  <Box sx={{ mt: 3 }}>
-    <Button type="submit" variant="outlined">
-      Submit
-    </Button>
-  </Box>
-</Box>
+            </Box>
     `)
 
     const changeDiff = (content: string) => {
@@ -148,7 +142,7 @@ export default function DiffVariant() {
                     minHeight: "200px"
                 }}
             >
-                <h2>Different variant TextField</h2>
+                <h3>Different variant TextField</h3>
                 <br />
                 There are three variants with label or input title: outlined (default), filled, and standard.
                 <br />
@@ -175,7 +169,6 @@ export default function DiffVariant() {
                             variant="outlined"
                             size="medium"
                             fullWidth
-                            useLabel={false}
                             inputTitle="Outlined"           // keep if you want title above
                         />
                         <CustomTextField
@@ -185,7 +178,6 @@ export default function DiffVariant() {
                             variant="outlined"
                             size="medium"
                             fullWidth
-                            useLabel={true}
                             label="Outlined With Label"
                         />
                     </Box>
@@ -199,7 +191,6 @@ export default function DiffVariant() {
                             variant="standard"
                             size="medium"
                             fullWidth
-                            useLabel={false}
                             inputTitle="Standard"
                         />
                         <CustomTextField
@@ -209,7 +200,6 @@ export default function DiffVariant() {
                             variant="standard"
                             size="medium"
                             fullWidth
-                            useLabel={true}
                             label="Standard With Label"
                         />
                     </Box>
@@ -223,7 +213,6 @@ export default function DiffVariant() {
                             variant="filled"
                             size="medium"
                             fullWidth
-                            useLabel={false}
                             inputTitle="Filled"
                         />
                         <CustomTextField
@@ -233,18 +222,17 @@ export default function DiffVariant() {
                             variant="filled"
                             size="medium"
                             fullWidth
-                            useLabel={true}
                             label="Filled With Label"
                         />
                     </Box>
-
+                    <Box sx={{ mt: 3 }}>
+                        <Button type="submit" variant="outlined">
+                            Submit
+                        </Button>
+                    </Box>
                 </Box>
 
-                <Box sx={{ mt: 3 }}>
-                    <Button type="submit" variant="outlined">
-                        Submit
-                    </Button>
-                </Box>
+
             </Box>
             <Box
                 sx={{

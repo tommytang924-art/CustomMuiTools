@@ -317,7 +317,7 @@ function DiffVariant() {
             standardWithLabel: ""
         }
     });
-    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n        <Box\n            component="form"\n            onSubmit={form.handleSubmit(handleSubmit)}\n            sx={{\n                marginTop: "24px",\n                display: "flex",\n                justifyContent: "flex-start",\n                alignItems: "flex-end",           \n                gap: "32px",                    \n                }}\n        >\n\n    {/* Column 1 – Outlined */}\n    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n      <CustomTextField\n        placeholder="Outlined"\n        form={form}\n        formFieldName="outlined"\n        variant="outlined"\n        size="medium"\n        fullWidth\n        useLabel={false}\n        inputTitle="Outlined"           // keep if you want title above\n      />\n      <CustomTextField\n        placeholder="Outlined With Label"\n        form={form}\n        formFieldName="outLinedWithLabel"\n        variant="outlined"\n        size="medium"\n        fullWidth\n        useLabel={true}\n        label="Outlined With Label"\n      />\n    </Box>\n\n    {/* Column 2 – Standard */}\n    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n      <CustomTextField\n        placeholder="Standard"\n        form={form}\n        formFieldName="standard"\n        variant="standard"\n        size="medium"\n        fullWidth\n        useLabel={false}\n        inputTitle="Standard"\n      />\n      <CustomTextField\n        placeholder="Standard With Label"\n        form={form}\n        formFieldName="standardWithLabel"\n        variant="standard"\n        size="medium"\n        fullWidth\n        useLabel={true}\n        label="Standard With Label"\n      />\n    </Box>\n\n    {/* Column 3 – Filled */}\n    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n      <CustomTextField\n        placeholder="Filled"\n        form={form}\n        formFieldName="filled"\n        variant="filled"\n        size="medium"\n        fullWidth\n        useLabel={false}\n        inputTitle="Filled"\n      />\n      <CustomTextField\n        placeholder="Filled With Label"\n        form={form}\n        formFieldName="filledWithLabel"\n        variant="filled"\n        size="medium"\n        fullWidth\n        useLabel={true}\n        label="Filled With Label"\n      />\n    </Box>\n\n  </Box>\n\n  <Box sx={{ mt: 3 }}>\n    <Button type="submit" variant="outlined">\n      Submit\n    </Button>\n  </Box>\n</Box>\n    '), 2), DiffVariantCode = _useState[0], setDVCode = _useState[1];
+    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n                <Box\n                    component="form"\n                    onSubmit={form.handleSubmit(handleSubmit)}\n                    sx={{\n                        marginTop: "24px",\n                        display: "flex",\n                        justifyContent: "flex-start",\n                        alignItems: "flex-end",           // ← key: align baselines\n                        gap: "32px",                      // wider gap looks better in demos\n                    }}\n                >\n\n                    {/* Column 1 – Outlined */}\n                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n                        <CustomTextField\n                            placeholder="Outlined"\n                            form={form}\n                            formFieldName="outlined"\n                            variant="outlined"\n                            size="medium"\n                            fullWidth\n                            inputTitle="Outlined"           // keep if you want title above\n                        />\n                        <CustomTextField\n                            placeholder="Outlined With Label"\n                            form={form}\n                            formFieldName="outLinedWithLabel"\n                            variant="outlined"\n                            size="medium"\n                            fullWidth\n                            label="Outlined With Label"\n                        />\n                    </Box>\n\n                    {/* Column 2 – Standard */}\n                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n                        <CustomTextField\n                            placeholder="Standard"\n                            form={form}\n                            formFieldName="standard"\n                            variant="standard"\n                            size="medium"\n                            fullWidth\n                            inputTitle="Standard"\n                        />\n                        <CustomTextField\n                            placeholder="Standard With Label"\n                            form={form}\n                            formFieldName="standardWithLabel"\n                            variant="standard"\n                            size="medium"\n                            fullWidth\n                            label="Standard With Label"\n                        />\n                    </Box>\n\n                    {/* Column 3 – Filled */}\n                    <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>\n                        <CustomTextField\n                            placeholder="Filled"\n                            form={form}\n                            formFieldName="filled"\n                            variant="filled"\n                            size="medium"\n                            fullWidth\n                            inputTitle="Filled"\n                        />\n                        <CustomTextField\n                            placeholder="Filled With Label"\n                            form={form}\n                            formFieldName="filledWithLabel"\n                            variant="filled"\n                            size="medium"\n                            fullWidth\n                            label="Filled With Label"\n                        />\n                    </Box>\n                \n                <Box sx={{ mt: 3 }}>\n                    <Button type="submit" variant="outlined">\n                        Submit\n                    </Button>\n                </Box>\n                </Box>\n\n            </Box>\n    '), 2), DiffVariantCode = _useState[0], setDVCode = _useState[1];
     var changeDiff = function(content) {
         setDVCode(content);
     };
@@ -334,22 +334,22 @@ function DiffVariant() {
                     minHeight: "200px"
                 },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "Different variant TextField"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 151,
+                        lineNumber: 145,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 152,
+                        lineNumber: 146,
                         columnNumber: 17
                     }, this),
                     "There are three variants with label or input title: outlined (default), filled, and standard.",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 154,
+                        lineNumber: 148,
                         columnNumber: 17
                     }, this),
                     "They also have error handling, you can click submit without typing to see it.",
@@ -378,11 +378,10 @@ function DiffVariant() {
                                         variant: "outlined",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: false,
                                         inputTitle: "Outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 165,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -392,17 +391,16 @@ function DiffVariant() {
                                         variant: "outlined",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: true,
                                         label: "Outlined With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 174,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 170,
+                                lineNumber: 164,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -419,11 +417,10 @@ function DiffVariant() {
                                         variant: "standard",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: false,
                                         inputTitle: "Standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 195,
+                                        lineNumber: 187,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -433,17 +430,16 @@ function DiffVariant() {
                                         variant: "standard",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: true,
                                         label: "Standard With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 205,
+                                        lineNumber: 196,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 194,
+                                lineNumber: 186,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -460,11 +456,10 @@ function DiffVariant() {
                                         variant: "filled",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: false,
                                         inputTitle: "Filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 219,
+                                        lineNumber: 209,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -474,47 +469,46 @@ function DiffVariant() {
                                         variant: "filled",
                                         size: "medium",
                                         fullWidth: true,
-                                        useLabel: true,
                                         label: "Filled With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 229,
+                                        lineNumber: 218,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 218,
+                                lineNumber: 208,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                                sx: {
+                                    mt: 3
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                                    type: "submit",
+                                    variant: "outlined",
+                                    children: "Submit"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
+                                    lineNumber: 229,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
+                                lineNumber: 228,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 157,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                        sx: {
-                            mt: 3
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
-                            type: "submit",
-                            variant: "outlined",
-                            children: "Submit"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                            lineNumber: 244,
-                            columnNumber: 21
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 243,
+                        lineNumber: 151,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                lineNumber: 143,
+                lineNumber: 137,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -529,18 +523,18 @@ function DiffVariant() {
                     setContent: changeDiff
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                    lineNumber: 257,
+                    lineNumber: 245,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                lineNumber: 249,
+                lineNumber: 237,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true);
 }
-_s(DiffVariant, "VKHVQ9DPxPXEXp7KZnzOyHI4kGA=", false, function() {
+_s(DiffVariant, "QlXEM8MaqC8llFiqocEHuYZVZfM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
@@ -616,7 +610,7 @@ function DiffSize() {
                     minHeight: "200px"
                 },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "Different Size TextFields"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
@@ -650,7 +644,6 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "outlinedSmall",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Outlined Small",
                                         size: "small",
                                         variant: "outlined"
@@ -664,13 +657,12 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "outlinedMedium",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Outlined Medium",
                                         size: "medium",
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 148,
                                         columnNumber: 25
                                     }, this)
                                 ]
@@ -691,13 +683,12 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "standardSmall",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Standard Small",
                                         size: "small",
                                         variant: "standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 159,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -705,19 +696,18 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "standardMedium",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Standard Medium",
                                         size: "medium",
                                         variant: "standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 168,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                lineNumber: 160,
+                                lineNumber: 158,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -732,13 +722,12 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "filledSmall",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Filled Small",
                                         size: "small",
                                         variant: "filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 179,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -746,19 +735,18 @@ function DiffSize() {
                                         form: form,
                                         formFieldName: "filledMedium",
                                         fullWidth: false,
-                                        useLabel: true,
                                         label: "Filled Medium",
                                         size: "medium",
                                         variant: "filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 193,
+                                        lineNumber: 188,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                lineNumber: 182,
+                                lineNumber: 178,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -785,12 +773,12 @@ function DiffSize() {
                     setContent: changeDiff
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                    lineNumber: 214,
+                    lineNumber: 208,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                lineNumber: 206,
+                lineNumber: 200,
                 columnNumber: 13
             }, this)
         ]
@@ -862,7 +850,7 @@ function TextArea() {
     var changeTA = function(content) {
         setTACode(content);
     };
-    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n    <Box sx={{\n            marginTop: "24px",\n            display: "flex"\n            gap: "32px",\n            flexDirection:"column"                      \n        }}>\n                        <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Outlined Row"\n                                form={form}\n                                formFieldName="textAreaRowOutlined"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Outlined Row"\n                                variant="outlined"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Outlined MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowOutlined"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Outlined MaxRow"\n                                variant="outlined"\n                                maxRows={4}\n                            />\n                        </Box>\n                        <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Filled Row"\n                                form={form}\n                                formFieldName="textAreaRowFilled"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Filled Row"\n                                variant="filled"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Filled MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowFilled"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Filled MaxRow"\n                                variant="filled"\n                                maxRows={4}\n                            />\n                        </Box>\n                          <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Standard Row"\n                                form={form}\n                                formFieldName="textAreaRowStandard"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Standard Row"\n                                variant="standard"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Standard MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowStandard"\n                                fullWidth={false}\n                                useLabel={true}\n                                label="Standard MaxRow"\n                                variant="standard"\n                                maxRows={4}\n                            />\n                        </Box>\n                    </Box>\n                </Box>\n                <Box\n                    sx={{\n                        mt: 2,\n                        minWidth: \'856px\', // Adjust width as needed\n                        borderRadius: \'8px\',\n                        overflow: \'hidden\', // To handle inner borders cleanly\n                    }}\n                >\n                    <CodeViewer\n                        content={TextAreaCode}\n                        setContent={changeTA}\n                    />\n                </Box>\n        '), 2), TextAreaCode = _useState[0], setTACode = _useState[1];
+    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n    <Box sx={{\n            marginTop: "24px",\n            display: "flex"\n            gap: "32px",\n            flexDirection:"column"                      \n        }}>\n                        <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Outlined Row"\n                                form={form}\n                                formFieldName="textAreaRowOutlined"\n                                fullWidth={false}\n                                label="Outlined Row"\n                                variant="outlined"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Outlined MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowOutlined"\n                                fullWidth={false}\n                                label="Outlined MaxRow"\n                                variant="outlined"\n                                maxRows={4}\n                            />\n                        </Box>\n                        <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Filled Row"\n                                form={form}\n                                formFieldName="textAreaRowFilled"\n                                fullWidth={false}\n                                label="Filled Row"\n                                variant="filled"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Filled MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowFilled"\n                                fullWidth={false}\n                                label="Filled MaxRow"\n                                variant="filled"\n                                maxRows={4}\n                            />\n                        </Box>\n                          <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                            <CustomTextField\n                                placeholder="Standard Row"\n                                form={form}\n                                formFieldName="textAreaRowStandard"\n                                fullWidth={false}\n                                label="Standard Row"\n                                variant="standard"\n                                rows={10}\n                            />\n                            <CustomTextField\n                                placeholder="Standard MaxRow"\n                                form={form}\n                                formFieldName="textAreaMaxRowStandard"\n                                fullWidth={false}\n                                label="Standard MaxRow"\n                                variant="standard"\n                                maxRows={4}\n                            />\n                        </Box>\n                    </Box>\n                </Box>\n                <Box\n                    sx={{\n                        mt: 2,\n                        minWidth: \'856px\', // Adjust width as needed\n                        borderRadius: \'8px\',\n                        overflow: \'hidden\', // To handle inner borders cleanly\n                    }}\n                >\n                    <CodeViewer\n                        content={TextAreaCode}\n                        setContent={changeTA}\n                    />\n                </Box>\n        '), 2), TextAreaCode = _useState[0], setTACode = _useState[1];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -873,28 +861,28 @@ function TextArea() {
                     minHeight: "200px"
                 },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "TextArea"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 136,
+                        lineNumber: 130,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 137,
+                        lineNumber: 131,
                         columnNumber: 17
                     }, this),
                     "There are two param:",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 139,
+                        lineNumber: 133,
                         columnNumber: 17
                     }, this),
                     "rows - config the minimum rows of the textArea",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 141,
+                        lineNumber: 135,
                         columnNumber: 17
                     }, this),
                     "maxRows - config the maximum view rows of the textArea",
@@ -923,7 +911,7 @@ function TextArea() {
                                         rows: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 146,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -936,13 +924,13 @@ function TextArea() {
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 155,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                lineNumber: 151,
+                                lineNumber: 145,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -962,7 +950,7 @@ function TextArea() {
                                         rows: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 166,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -975,13 +963,13 @@ function TextArea() {
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 175,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                lineNumber: 171,
+                                lineNumber: 165,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1001,7 +989,7 @@ function TextArea() {
                                         rows: 10
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 192,
+                                        lineNumber: 186,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1014,25 +1002,25 @@ function TextArea() {
                                         maxRows: 4
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 195,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                                lineNumber: 191,
+                                lineNumber: 185,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 144,
+                        lineNumber: 138,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                lineNumber: 129,
+                lineNumber: 123,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1047,18 +1035,18 @@ function TextArea() {
                     setContent: changeTA
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                    lineNumber: 221,
+                    lineNumber: 215,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                lineNumber: 213,
+                lineNumber: 207,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true);
 }
-_s(TextArea, "z79qfSF5a923kdBawFAJOtGAU2Y=", false, function() {
+_s(TextArea, "wTv2qcI6njkH5PUQVV+N3AozuuE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
@@ -1131,7 +1119,7 @@ function ColorParam() {
             SdLbColor: ""
         }
     });
-    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n         <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Background Color"\n                        form={form}\n                        formFieldName="OlbgColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Outlined Background Color"\n                        variant="outlined"\n                        bgColor="lightblue"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Background Color"\n                        form={form}\n                        formFieldName="FibgColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Filled Background Color"\n                        variant="filled"\n                        bgColor="lightblue"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Background Color"\n                        form={form}\n                        formFieldName="SdbgColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Standard Background Color"\n                        variant="standard"\n                        bgColor="lightblue"\n                    />\n                </Box>\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Text Color"\n                        form={form}\n                        formFieldName="OltextColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Outlined Text Color"\n                        variant="outlined"\n                        textColor="red"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Text Color"\n                        form={form}\n                        formFieldName="FitextColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Filled Text Color"\n                        variant="filled"\n                        textColor="red"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Text Color"\n                        form={form}\n                        formFieldName="SdtextColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Standard Text Color"\n                        variant="standard"\n                        textColor="red"\n                    />\n                </Box>\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Border Color"\n                        form={form}\n                        formFieldName="OlbrColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Outlined Border Color"\n                        variant="outlined"\n                        borderColor="#FFC107"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Border Color"\n                        form={form}\n                        formFieldName="FibrColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Filled Border Color"\n                        variant="filled"\n                        borderColor="#FFC107"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Border Color"\n                        form={form}\n                        formFieldName="SdbrColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Standard Border Color"\n                        variant="standard"\n                        borderColor="#FFC107"\n                    />\n                </Box>\n                 <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Label Color"\n                        form={form}\n                        formFieldName="OlLbColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Outlined Label Color"\n                        variant="outlined"\n                        labelColor="#ff0707ff"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Label Color"\n                        form={form}\n                        formFieldName="FiLbColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Filled Label Color"\n                        variant="filled"\n                        labelColor="#ff0707ff"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Label Color"\n                        form={form}\n                        formFieldName="SdLbColor"\n                        fullWidth={false}\n                        useLabel={true}\n                        label="Standard Label Color"\n                        variant="standard"\n                        labelColor="#ff0707ff"\n                    />\n                </Box>\n        '), 2), ColorParamCode = _useState[0], setCPCode = _useState[1];
+    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Background Color"\n                        form={form}\n                        formFieldName="OlbgColor"\n                        fullWidth={false}\n                        label="Outlined Background Color"\n                        variant="outlined"\n                        bgColor="lightblue"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Background Color"\n                        form={form}\n                        formFieldName="FibgColor"\n                        fullWidth={false}\n                        label="Filled Background Color"\n                        variant="filled"\n                        bgColor="lightblue"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Background Color"\n                        form={form}\n                        formFieldName="SdbgColor"\n                        fullWidth={false}\n                        label="Standard Background Color"\n                        variant="standard"\n                        bgColor="lightblue"\n                    />\n                </Box>\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Text Color"\n                        form={form}\n                        formFieldName="OltextColor"\n                        fullWidth={false}\n                        label="Outlined Text Color"\n                        variant="outlined"\n                        textColor="red"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Text Color"\n                        form={form}\n                        formFieldName="FitextColor"\n                        fullWidth={false}\n                        label="Filled Text Color"\n                        variant="filled"\n                        textColor="red"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Text Color"\n                        form={form}\n                        formFieldName="SdtextColor"\n                        fullWidth={false}\n                        label="Standard Text Color"\n                        variant="standard"\n                        textColor="red"\n                    />\n                </Box>\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Border Color"\n                        form={form}\n                        formFieldName="OlbrColor"\n                        fullWidth={false}\n                        label="Outlined Border Color"\n                        variant="outlined"\n                        borderColor="#FFC107"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Border Color"\n                        form={form}\n                        formFieldName="FibrColor"\n                        fullWidth={false}\n                        label="Filled Border Color"\n                        variant="filled"\n                        borderColor="#FFC107"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Border Color"\n                        form={form}\n                        formFieldName="SdbrColor"\n                        fullWidth={false}\n                        label="Standard Border Color"\n                        variant="standard"\n                        borderColor="#FFC107"\n                    />\n                </Box>\n                <Box sx={{ display: "flex", flexDirection: "row", gap: "25px" }}>\n                    <CustomTextField\n                        placeholder="Outlined Label Color"\n                        form={form}\n                        formFieldName="OlLbColor"\n                        fullWidth={false}\n                        label="Outlined Label Color"\n                        variant="outlined"\n                        labelColor="#ff0707ff"\n                    />\n                    <CustomTextField\n                        placeholder="Filled Label Color"\n                        form={form}\n                        formFieldName="FiLbColor"\n                        fullWidth={false}\n                        label="Filled Label Color"\n                        variant="filled"\n                        labelColor="#ff0707ff"\n                    />\n                    <CustomTextField\n                        placeholder="Standard Label Color"\n                        form={form}\n                        formFieldName="SdLbColor"\n                        fullWidth={false}\n                        label="Standard Label Color"\n                        variant="standard"\n                        labelColor="#ff0707ff"\n                    />\n                </Box>\n        '), 2), ColorParamCode = _useState[0], setCPCode = _useState[1];
     var changeCode = function(content) {
         setCPCode(content);
     };
@@ -1147,22 +1135,22 @@ function ColorParam() {
                 flexDirection: "column"
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: "Different Color Param in TextField"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 189,
+                    lineNumber: 177,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 190,
+                    lineNumber: 178,
                     columnNumber: 17
                 }, this),
                 "There are four param can be set - textColor, borderColor, labelColor, bgColor",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 192,
+                    lineNumber: 180,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1173,7 +1161,7 @@ function ColorParam() {
                     children: "* Reminder the bgColor apply to standard variant TextField would bind the placholder. Furthermore, the standard variant need to focus to show the label unlike other variant. So, you cannot see any text in standard variant when applying bgColor"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 193,
+                    lineNumber: 181,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1188,13 +1176,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "OlbgColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Outlined Background Color",
                             variant: "outlined",
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 197,
+                            lineNumber: 185,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1202,13 +1189,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "FibgColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Filled Background Color",
                             variant: "filled",
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 207,
+                            lineNumber: 194,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1216,19 +1202,18 @@ function ColorParam() {
                             form: form,
                             formFieldName: "SdbgColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Standard Background Color",
                             variant: "standard",
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 217,
+                            lineNumber: 203,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 196,
+                    lineNumber: 184,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1243,13 +1228,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "OltextColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Outlined Text Color",
                             variant: "outlined",
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 229,
+                            lineNumber: 214,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1257,13 +1241,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "FitextColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Filled Text Color",
                             variant: "filled",
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 239,
+                            lineNumber: 223,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1271,19 +1254,18 @@ function ColorParam() {
                             form: form,
                             formFieldName: "SdtextColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Standard Text Color",
                             variant: "standard",
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 249,
+                            lineNumber: 232,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 228,
+                    lineNumber: 213,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1298,13 +1280,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "OlbrColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Outlined Border Color",
                             variant: "outlined",
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 261,
+                            lineNumber: 243,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1312,13 +1293,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "FibrColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Filled Border Color",
                             variant: "filled",
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 271,
+                            lineNumber: 252,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1326,19 +1306,18 @@ function ColorParam() {
                             form: form,
                             formFieldName: "SdbrColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Standard Border Color",
                             variant: "standard",
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 281,
+                            lineNumber: 261,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 260,
+                    lineNumber: 242,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1353,13 +1332,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "OlLbColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Outlined Label Color",
                             variant: "outlined",
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 293,
+                            lineNumber: 272,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1367,13 +1345,12 @@ function ColorParam() {
                             form: form,
                             formFieldName: "FiLbColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Filled Label Color",
                             variant: "filled",
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 303,
+                            lineNumber: 281,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1381,19 +1358,18 @@ function ColorParam() {
                             form: form,
                             formFieldName: "SdLbColor",
                             fullWidth: false,
-                            useLabel: true,
                             label: "Standard Label Color",
                             variant: "standard",
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 313,
+                            lineNumber: 290,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 292,
+                    lineNumber: 271,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CodeViewer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1401,18 +1377,18 @@ function ColorParam() {
                     setContent: changeCode
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 324,
+                    lineNumber: 300,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-            lineNumber: 179,
+            lineNumber: 167,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(ColorParam, "SJURj7cvo3EXIokLDECaOScJExo=", false, function() {
+_s(ColorParam, "iyKberPNAchsVEnJ7kSA2+UTWKc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
@@ -1470,7 +1446,7 @@ function IconTextField() {
             password: ""
         }
     });
-    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n        <Box sx={{\n            marginTop: "24px",\n            width:"250px"                      // wider gap looks better in demos\n        }}>\n        <Box sx={{ display: "flex", flexDirection: "column", gap:"5px" }}>\n            <CustomTextField\n                placeholder="username" \n                form={form}\n                formFieldName="username"\n                fullWidth={false}\n                useLabel={true}\n                inputTitle="Username"\n                variant="outlined"\n                iconPosition="start"\n                IconComponent={PersonIcon}\n                margin="none"\n                label="username"\n            />\n            <CustomTextField\n                placeholder="password"\n                form={form}\n                formFieldName="password"\n                fullWidth={false}\n                useLabel={true}\n                label="password"\n                 inputTitle="Password"\n                variant="outlined"\n                iconPosition="end"\n                IconComponent={KeyIcon}\n                margin="none"\n            />\n            </Box>\n        </Box>\n        </Box>\n        \n        '), 2), iconCode = _useState[0], setIconCode = _useState[1];
+    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n        <Box sx={{\n            marginTop: "24px",\n            width:"250px"                      // wider gap looks better in demos\n        }}>\n        <Box sx={{ display: "flex", flexDirection: "column", gap:"5px" }}>\n            <CustomTextField\n                placeholder="username" \n                form={form}\n                formFieldName="username"\n                fullWidth={false}\n                inputTitle="Username"\n                variant="outlined"\n                iconPosition="start"\n                IconComponent={PersonIcon}\n                margin="none"\n                label="username"\n            />\n            <CustomTextField\n                placeholder="password"\n                form={form}\n                formFieldName="password"\n                fullWidth={false}\n                inputTitle="Password"\n                variant="outlined"\n                iconPosition="end"\n                IconComponent={KeyIcon}\n                margin="none"\n            />\n            </Box>\n        </Box>\n        </Box>\n        \n        '), 2), iconCode = _useState[0], setIconCode = _useState[1];
     var changeIconCode = function(content) {
         setIconCode(content);
     };
@@ -1482,28 +1458,28 @@ function IconTextField() {
                 borderRadius: '8px'
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: "Icon"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 79,
+                    lineNumber: 76,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 80,
+                    lineNumber: 77,
                     columnNumber: 17
                 }, this),
                 "There are two param:",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 82,
+                    lineNumber: 79,
                     columnNumber: 17
                 }, this),
                 "iconPosition - control the icon is end or start",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 84,
+                    lineNumber: 81,
                     columnNumber: 17
                 }, this),
                 "icon - set the icon element * must be marterial icon",
@@ -1531,7 +1507,7 @@ function IconTextField() {
                                 margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                                lineNumber: 91,
+                                lineNumber: 88,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1546,18 +1522,18 @@ function IconTextField() {
                                 margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                                lineNumber: 102,
+                                lineNumber: 99,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                        lineNumber: 90,
+                        lineNumber: 87,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 86,
+                    lineNumber: 83,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1572,23 +1548,23 @@ function IconTextField() {
                         setContent: changeIconCode
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                        lineNumber: 123,
+                        lineNumber: 120,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 115,
+                    lineNumber: 112,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-            lineNumber: 72,
+            lineNumber: 69,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(IconTextField, "AnYuzeUmYo3bvxdzoY1Zw0durgg=", false, function() {
+_s(IconTextField, "Sqi7rE9WuNlYmGFQbnhq3tEhWvs=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
@@ -1643,11 +1619,16 @@ function TextFieldComponent() {
                         overflow: 'hidden'
                     },
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             children: "Text Field"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
                             lineNumber: 36,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
+                            lineNumber: 37,
                             columnNumber: 21
                         }, this),
                         "Here is the demo of MyTextField Component. At the bottom, there are table to show the parameter of that component"
@@ -1659,27 +1640,27 @@ function TextFieldComponent() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$DiffVariant$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$DiffSize$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$TextArea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$ColorParam$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$IconTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 21
                 }, this)
             ]

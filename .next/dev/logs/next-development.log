@@ -1,94 +1,77 @@
-[00:00:06.448] Server  WARN    ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
-[00:00:07.043] Server  LOG     ✓ Ready in 5.5s
-[00:00:42.148] Server  LOG     next Auth error Error: Invalid authentication
-[00:01:14.581] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:14.774] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:15.462] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:15.678] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:15.895] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:16.053] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:16.261] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:16.459] Server  ERROR   ⨯ Error: The default export is not a React Component in "/datePicker/page"
-[00:01:16.647] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/datePicker/page"
-[00:16:00.265] Server  LOG     ✓ Compiled in 1142ms
-[00:16:26.183] Server  LOG     ✓ Compiled in 37ms
-[00:17:09.047] Server  LOG     ✓ Compiled in 140ms
-[00:17:16.502] Server  LOG     ✓ Compiled in 11ms
-[00:17:37.945] Server  LOG     ✓ Compiled in 9ms
-[00:17:49.121] Server  LOG     ✓ Compiled in 9ms
-[00:17:52.588] Server  LOG     ✓ Compiled in 10ms
-[00:18:02.483] Server  LOG     ✓ Compiled in 11ms
-[00:18:16.283] Server  LOG     ✓ Compiled in 10ms
-[00:18:22.938] Server  LOG     ✓ Compiled in 29ms
-[00:18:30.360] Server  LOG     ✓ Compiled in 13ms
-[00:19:18.330] Server  LOG     ✓ Compiled in 10ms
-[00:19:39.785] Server  LOG     ✓ Compiled in 8ms
-[00:19:50.273] Server  LOG     ✓ Compiled in 14ms
-[00:20:13.777] Server  LOG     ✓ Compiled in 33ms
-[00:20:21.832] Server  LOG     ✓ Compiled in 24ms
-[00:35:55.809] Server  LOG     ✓ Compiled in 27ms
-[00:36:51.341] Server  LOG     ✓ Compiled in 32ms
-[00:37:06.620] Server  LOG     ✓ Compiled in 20ms
-[00:38:50.752] Server  LOG     ✓ Compiled in 32ms
-[00:39:06.180] Server  LOG     ✓ Compiled in 20ms
-[00:42:27.337] Server  LOG     ✓ Compiled in 15ms
-[00:43:11.219] Server  LOG     ✓ Compiled in 26ms
-[00:43:29.507] Server  LOG     ✓ Compiled in 22ms
-[00:45:05.166] Server  LOG     ✓ Compiled in 10ms
-[00:45:05.243] Browser WARN    MUI X: The field component you are using is not compatible with the "minutes" date section. The supported date sections are ["empty", "weekDay", "day", "month", "year"]`.
-[00:46:03.757] Server  LOG     ✓ Compiled in 2s
-[00:46:04.530] Browser ERROR   ./src/components/common/CustDatePicker.tsx:90:42
-Parsing ecmascript source code failed
-  88 |                                 views={views}
-  89 |                                 yearsOrder={yearsOrder}
-> 90 |                                 onChange{}
-     |                                          ^
-  91 |                                 slots={{ openPickerIcon: openPickerIcon }}
-  92 |                                 slotProps={{
-  93 |                                     field: {
+[00:00:04.282] Server  WARN    ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
+[00:00:04.934] Server  LOG     ✓ Ready in 4s
+[00:19:21.868] Server  LOG     ✓ Compiled in 24ms
+[00:19:23.863] Server  LOG     ✓ Compiled in 15ms
+[00:20:08.728] Server  LOG     ✓ Compiled in 28ms
+[00:20:31.495] Server  LOG     ✓ Compiled in 14ms
+[00:21:14.673] Server  LOG     ✓ Compiled in 96ms
+[00:21:14.751] Browser WARN    MUI: You have provided an out-of-range value `Tyson Men` for the select component.
+Consider providing a value that matches one of the available options or ''.
+The available values are `John Doe`, `Jane Smith`, `Bob Johnson`, `Alice Williams`, `Yip Men`.
+[00:21:16.076] Browser WARN    MUI: You have provided an out-of-range value `Tyson Men` for the select component.
+Consider providing a value that matches one of the available options or ''.
+The available values are `John Doe`, `Jane Smith`, `Bob Johnson`, `Alice Williams`, `Yip Men`.
+[00:22:00.560] Server  LOG     ✓ Compiled in 66ms
+[00:22:00.669] Browser ERROR   uncaughtError: TypeError: selected.map is not a function
+[00:27:21.107] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:21.454] Server  ERROR   ⨯ TypeError: selected.map is not a function
+[00:27:21.455] Server  LOG     ✓ Compiled in 32ms
+[00:27:22.387] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-Expected '</', got '}'
+selected.map is not a function
+[00:27:22.645] Browser ERROR   uncaughtError: TypeError: selected.map is not a function
+[00:28:19.732] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:28:19.764] Server  LOG     ✓ Compiled in 14ms
+[00:28:20.078] Server  ERROR   ⨯ Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:28:20.877] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-Import traces:
-  Client Component Browser:
-    ./src/components/common/CustDatePicker.tsx [Client Component Browser]
-    ./src/components/page/DatePicker/DatePickerDemo1.tsx [Client Component Browser]
-    ./src/components/page/DatePicker/DatePickerPage.tsx [Client Component Browser]
-    ./src/components/page/DatePicker/DatePickerPage.tsx [Server Component]
-    ./src/app/(login)/datePicker/page.tsx [Server Component]
+MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:28:21.096] Browser ERROR   uncaughtError: Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:28:43.231] Server  ERROR   ⨯ Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:28:43.925] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-  Client Component SSR:
-    ./src/components/common/CustDatePicker.tsx [Client Component SSR]
-    ./src/components/page/DatePicker/DatePickerDemo1.tsx [Client Component SSR]
-    ./src/components/page/DatePicker/DatePickerPage.tsx [Client Component SSR]
-    ./src/components/page/DatePicker/DatePickerPage.tsx [Server Component]
-    ./src/app/(login)/datePicker/page.tsx [Server Component]
-[00:47:10.610] Server  LOG     ✓ Compiled in 20ms
-[00:47:38.283] Server  LOG     ✓ Compiled in 17ms
-[00:49:40.926] Server  LOG     ✓ Compiled in 47ms
-[00:49:53.617] Server  LOG     ✓ Compiled in 11ms
-[00:50:09.394] Server  LOG     ✓ Compiled in 9ms
-[00:50:17.005] Server  LOG     ✓ Compiled in 20ms
-[00:52:10.287] Server  LOG     ✓ Compiled in 11ms
-[00:52:40.020] Server  LOG     ✓ Compiled in 21ms
-[00:52:58.969] Server  LOG     ✓ Compiled in 43ms
-[00:54:10.075] Server  LOG     ✓ Compiled in 12ms
-[00:55:42.314] Server  LOG     ✓ Compiled in 23ms
-[00:55:44.346] Server  LOG     ✓ Compiled in 11ms
-[01:02:19.718] Server  LOG     ✓ Compiled in 25ms
-[01:02:23.459] Server  LOG     ✓ Compiled in 16ms
-[01:02:45.782] Server  LOG     ✓ Compiled in 10ms
-[01:02:55.710] Server  LOG     ✓ Compiled in 10ms
-[01:08:05.002] Server  LOG     ✓ Compiled in 19ms
-[01:08:38.720] Server  LOG     ✓ Compiled in 15ms
-[01:09:22.790] Server  LOG     ✓ Compiled in 28ms
-[01:09:34.850] Server  LOG     ✓ Compiled in 7ms
-[01:09:41.789] Server  LOG     ✓ Compiled in 13ms
-[01:09:47.342] Server  LOG     ✓ Compiled in 10ms
-[01:10:08.462] Server  LOG     ✓ Compiled in 9ms
-[01:10:18.184] Server  LOG     ✓ Compiled in 11ms
-[01:10:51.216] Server  LOG     ✓ Compiled in 47ms
-[01:10:51.537] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: [object Date]). If you meant to render a collection of children, use an array instead.
-[01:11:57.780] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:11:57.804] Server  LOG     ✓ Compiled in 76ms
-[01:12:51.649] Server  LOG     ✓ Compiled in 16ms
+MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:28:44.174] Browser ERROR   uncaughtError: Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
+[00:29:04.524] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:04.538] Server  LOG     ✓ Compiled in 235ms
+[00:29:38.482] Server  LOG     ✓ Compiled in 16ms
+[00:29:40.246] Server  LOG     ✓ Compiled in 20ms
+[00:30:36.998] Server  LOG     ✓ Compiled in 15ms
+[00:58:40.651] Server  LOG     ✓ Compiled in 9ms
+[00:58:56.724] Server  LOG     ✓ Compiled in 16ms
+[01:13:36.779] Server  LOG     ✓ Compiled in 185ms
+[01:37:43.841] Server  LOG     ✓ Compiled in 26ms
+[01:37:58.030] Server  LOG     ✓ Compiled in 13ms
+[01:40:39.459] Server  LOG     ✓ Compiled in 46ms
+[01:41:42.060] Server  LOG     ✓ Compiled in 144ms
+[01:42:43.263] Server  LOG     ✓ Compiled in 13ms
+[01:43:12.184] Server  LOG     ✓ Compiled in 11ms
+[01:43:15.385] Server  LOG     ✓ Compiled in 20ms
+[01:44:42.020] Server  LOG     ✓ Compiled in 12ms
+[01:46:08.238] Server  LOG     ✓ Compiled in 17ms
+[01:46:17.747] Server  LOG     ✓ Compiled in 13ms
+[01:46:43.765] Server  LOG     ✓ Compiled in 9ms
+[01:47:17.358] Server  LOG     ✓ Compiled in 21ms
+[01:47:22.092] Server  LOG     ✓ Compiled in 10ms
+[01:48:07.571] Server  LOG     ✓ Compiled in 20ms
+[01:48:18.956] Server  LOG     ✓ Compiled in 27ms
+[01:48:26.870] Server  LOG     ✓ Compiled in 22ms
+[01:48:50.984] Server  LOG     ✓ Compiled in 15ms
+[01:48:54.181] Server  LOG     ✓ Compiled in 11ms
+[01:53:14.076] Server  LOG     ✓ Compiled in 27ms
+[01:53:25.093] Server  LOG     ✓ Compiled in 15ms
+[01:53:44.494] Server  LOG     ✓ Compiled in 108ms
+[01:53:59.376] Browser LOG     {"multipleSelect":["Bob Johnson"],"singleSelect":"Bob Johnson"}
+[01:53:59.728] Browser LOG     {"multipleSelect":["Bob Johnson"],"singleSelect":"Bob Johnson"}
+[01:54:41.643] Server  LOG     ✓ Compiled in 16ms
+[01:55:02.387] Server  LOG     ✓ Compiled in 157ms
+[01:55:23.884] Server  LOG     ✓ Compiled in 17ms
+[01:55:43.536] Server  LOG     ✓ Compiled in 16ms
+[01:56:05.375] Server  LOG     ✓ Compiled in 23ms
+[01:56:14.495] Server  LOG     ✓ Compiled in 13ms
+[01:56:29.944] Server  LOG     ✓ Compiled in 19ms
+[01:56:54.742] Server  LOG     ✓ Compiled in 16ms
+[01:57:38.653] Server  LOG     ✓ Compiled in 17ms
+[01:59:25.060] Server  LOG     ✓ Compiled in 10ms
+[02:01:21.421] Server  LOG     ✓ Compiled in 15ms
+[02:02:40.990] Server  LOG     ✓ Compiled in 372ms

@@ -125,7 +125,7 @@ export default function DiffSize() {
                     borderRadius: '8px',
                     minHeight: "200px"
                 }} >
-                <h2>Different Size TextFields</h2>
+                <h3>Different Size TextFields</h3>
                 <br />
                 There are two size: medium(default) and small
                 <Box sx={{
@@ -141,7 +141,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="outlinedSmall"
                             fullWidth={false}
-                            useLabel={true}
                             label="Outlined Small"
                             size="small"
                             variant="outlined"
@@ -151,7 +150,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="outlinedMedium"
                             fullWidth={false}
-                            useLabel={true}
                             label="Outlined Medium"
                             size="medium"
                             variant="outlined"
@@ -163,7 +161,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="standardSmall"
                             fullWidth={false}
-                            useLabel={true}
                             label="Standard Small"
                             size="small"
                             variant="standard"
@@ -173,7 +170,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="standardMedium"
                             fullWidth={false}
-                            useLabel={true}
                             label="Standard Medium"
                             size="medium"
                             variant="standard"
@@ -185,7 +181,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="filledSmall"
                             fullWidth={false}
-                            useLabel={true}
                             label="Filled Small"
                             size="small"
                             variant="filled"
@@ -195,7 +190,6 @@ export default function DiffSize() {
                             form={form}
                             formFieldName="filledMedium"
                             fullWidth={false}
-                            useLabel={true}
                             label="Filled Medium"
                             size="medium"
                             variant="filled"

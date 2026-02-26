@@ -33,7 +33,8 @@ export default function TextFieldComponent() {
                         borderRadius: '8px',
                         overflow: 'hidden', // To handle inner borders cleanly
                     }} >
-                    <h1>Text Field</h1>
+                    <h3>Text Field</h3>
+                    <br />
                     Here is the demo of MyTextField Component. At the bottom, there are table to show the parameter of that component
                 </Box>
                     <DiffVariant />
