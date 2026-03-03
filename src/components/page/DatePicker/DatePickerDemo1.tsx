@@ -3,14 +3,14 @@
 import CodeViewer from "@/components/common/CodeViewer"
 import CustomDatePicker from "@/components/common/CustDatePicker"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { Box } from "@mui/material"
+import { Box, Button } from "@mui/material"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 
 import * as yup from "yup"
 const schema = yup.object({
     dateBirth: yup.string().required("Date Birth is required"),
-    scheduler: yup.string().required(),
+    schedule: yup.string().required(),
 
 })
 
@@ -64,13 +64,19 @@ export default function DatePickerDemo1() {
         defaultValues: {
 
             dateBirth: "",
-            scheduler: ""
+            schedule: ""
         }
     })
 
-    const ModifyDP = (code:string) =>{
+    const ModifyDP = (code: string) => {
         setDPCode(code);
     }
+
+
+    const handleSubmit = (data: DatePickerForm) => {
+        console.log(data);
+    }
+
 
     return (
         <>
@@ -79,8 +85,10 @@ export default function DatePickerDemo1() {
                     {
                         display: "flex",
                         gap: 2,
-                        mb:3
+                        mb: 3
                     }}
+                component="form"
+                onSubmit={form.handleSubmit(handleSubmit)}
             >
                 <CustomDatePicker
                     form={form}
@@ -92,17 +100,20 @@ export default function DatePickerDemo1() {
                 />
                 <CustomDatePicker
                     form={form}
-                    formFieldName="scheduler"
+                    formFieldName="schedule"
                     label="Date of installation"
                     width="256px"
                     formatDate="yyyy-MM-dd"
                     minDate={schedulMinDate()}
                 />
+                <Button type="submit" variant="outlined">
+                    Submit
+                </Button>
             </Box>
-                <CodeViewer
+            <CodeViewer
                 content={dpCode}
                 setContent={ModifyDP}
-                />
+            />
 
         </>
     )

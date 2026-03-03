@@ -1,6 +1,12 @@
 {
+  "/(login)/[...notFound]/page": "app/(login)/[...notFound]/page.js",
+  "/(login)/dateAndTimePicker/datePicker/page": "app/(login)/dateAndTimePicker/datePicker/page.js",
+  "/(login)/dateAndTimePicker/dateRange/page": "app/(login)/dateAndTimePicker/dateRange/page.js",
+  "/(login)/dateAndTimePicker/timePicker/page": "app/(login)/dateAndTimePicker/timePicker/page.js",
+  "/(login)/form/page": "app/(login)/form/page.js",
   "/(login)/inputField/numberField/page": "app/(login)/inputField/numberField/page.js",
   "/(login)/inputField/select/page": "app/(login)/inputField/select/page.js",
   "/(login)/inputField/textField/page": "app/(login)/inputField/textField/page.js",
+  "/(login)/table/page": "app/(login)/table/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

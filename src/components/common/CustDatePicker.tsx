@@ -32,6 +32,8 @@ interface DatePickerProps {
     yearsPerRow?: number // [desktop, mobile]
     height?: string;
     inputTitleColor?: string;
+    size? : "small" | "medium",
+    labelColor?: string;
 }
 
 
@@ -40,8 +42,8 @@ export default function CustomDatePicker({
     formFieldName,
     label = "Date",
     inputTitle,
-    borderColor = "black",
-    bgColor = "white",
+    borderColor,
+    bgColor,
     minDate,
     maxDate,
     formatDate,
@@ -55,8 +57,10 @@ export default function CustomDatePicker({
     views = ['day', 'month', 'year'],
     yearsOrder = 'asc',
     height = "2.5em",
-    inputTitleColor = "black",
+    inputTitleColor,
     width,
+    size = "medium",
+    labelColor="black"
 
 }: DatePickerProps) {
 
@@ -83,23 +87,35 @@ export default function CustomDatePicker({
                                 shouldDisableYear={shouldDisableYear}
                                 views={views}
                                 yearsOrder={yearsOrder}
-                                value={field.value}
-                               onChange={field.onChange}
+                                value={field.value ? new Date(field.value) : null}
+                                onChange={field.onChange}
                                 slots={{ openPickerIcon: openPickerIcon }}
+
+
                                 slotProps={{
                                     field: {
                                         openPickerButtonPosition: PickerPosition,
                                     },
+
                                     textField: {
                                         // FIXED: fullWidth: false to fit inline; adjust as needed
                                         fullWidth: width ? false : true,
                                         error: !!error,
+                                        size: size,
                                         inputProps: {
                                             style: { height: height, width: width ? width : "100%" }, // FIXED: Adjusted to use width prop
                                         },
                                         helperText: error?.message,
                                         InputProps: {
-                                            style: { backgroundColor: `${bgColor}`, },
+                                            style: {
+                                                backgroundColor: `${bgColor}`,
+
+                                            },
+                                        },
+                                        InputLabelProps: {
+                                            sx: {
+                                                color: `${labelColor}`, // Custom color for the label when unfocused
+                                            },
                                         },
                                         sx: {
                                             '& .MuiOutlinedInput-notchedOutline': { // FIXED: Corrected class name
@@ -107,6 +123,7 @@ export default function CustomDatePicker({
                                             },
                                         },
                                     },
+
                                 }}
 
                             />

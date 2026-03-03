@@ -22,7 +22,7 @@ export default function DatePickerPage() {
                         mb:3,
                     }} >
                     <h3>Number Field</h3>
-                  
+                      <h5 style={{color:"red"}}>Remind you can click the submit button and then open F12 console to see form data</h5>
                 </Box>
                 <NumberFieldDemo/>
             </Container>

@@ -65,6 +65,33 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/(login)/dateAndTimePicker/dateRange/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dateAndTimePicker/dateRange">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/dateAndTimePicker/dateRange/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/(login)/dateAndTimePicker/timePicker/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dateAndTimePicker/timePicker">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/dateAndTimePicker/timePicker/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/(login)/form/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/form">> = Specific
+  const handler = {} as typeof import("../../../src/app/(login)/form/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/(login)/home/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/home">> = Specific

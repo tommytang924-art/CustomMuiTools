@@ -172,6 +172,7 @@ export default function ColorParam() {
                     minHeight: "200px",
                     gap: "20px",
                     display: "flex",
+                    fontSize: "16px",
                     flexDirection: "column"
                 }} >
                 <h3>Different Color Param in TextField</h3>

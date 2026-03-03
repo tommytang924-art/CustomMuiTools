@@ -125,7 +125,8 @@ export default function TextArea() {
                     mt: 4,
                     minWidth: '856px', // Adjust width as needed
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px",
                 }} >
                 <h3>TextArea</h3>
                 <br />
@@ -138,7 +139,6 @@ export default function TextArea() {
                 <Box sx={{
                     marginTop: "24px",
                     display: "flex",
-
                     gap: "32px",
                     flexDirection: "column"                      // wider gap looks better in demos
                 }}>

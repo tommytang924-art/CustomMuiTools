@@ -1,5 +1,5 @@
 "use client"
-import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel, TextField } from "@mui/material";
+import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TableSortLabel, TextField } from "@mui/material";
 import { useState, useMemo } from 'react';
 import { visuallyHidden } from '@mui/utils';
 
@@ -21,8 +21,12 @@ interface TableProps {
     handleRowClick: (id: string) => void;
     maxHeight?: string | number;
     hoverColor?: string;
-    selectedColor?:string;
+    selectedColor?: string;
     tableHeaderBgColor?: string;
+    rowHeight?: string;
+    usePagination?: boolean;
+    rowPerPage?: number;
+    rowPerPageOpt?: number[];
 
 }
 
@@ -65,8 +69,8 @@ interface EnhancedTableHeadProps {
 
 function EnhancedTableHead(props: EnhancedTableHeadProps) {
     const { order, orderBy, onRequestSort, headCells, filters, handleFilterChange } = props;
-    
-    const createSortHandler = (property: string, disableSorting?: boolean) => 
+
+    const createSortHandler = (property: string, disableSorting?: boolean) =>
         (event: React.MouseEvent<unknown>) => {
             if (!disableSorting) {
                 onRequestSort(event, property);
@@ -74,7 +78,13 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
         };
 
     return (
-        <TableHead>
+        <TableHead
+            sx={{
+                position: 'sticky',
+                top: 0,
+                zIndex: 3,                    // higher than filter row
+            }}
+        >
             <TableRow sx={{ height: "50px" }}>
                 {headCells.map((headCell) => (
                     <TableCell
@@ -108,9 +118,9 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
             </TableRow>
             <TableRow>
                 {headCells.map((headCell) => (
-                    <TableCell 
-                        key={`filter-${headCell.id}`} 
-                        sx={{ backgroundColor: "#f5f5f5", padding: "8px", minWidth:"200px" }}
+                    <TableCell
+                        key={`filter-${headCell.id}`}
+                        sx={{ backgroundColor: "#f5f5f5", padding: "8px", minWidth: "200px" }}
                     >
                         {!headCell.disableSearch ? (
                             <TextField
@@ -142,9 +152,13 @@ export default function TableComponent({
     selectedRowId,
     handleRowClick,
     maxHeight = 600,
-    hoverColor="rgba(25, 118, 210, 0.2)",
-    tableHeaderBgColor="#ebedf0",
-    selectedColor="rgba(25, 118, 210, 0.12)"
+    hoverColor = "rgba(25, 118, 210, 0.2)",
+    tableHeaderBgColor = "#ebedf0",
+    selectedColor = "rgba(25, 118, 210, 0.12)",
+    rowHeight = "25px",
+    usePagination = false,
+    rowPerPage = 5,
+    rowPerPageOpt = [5, 10, 20],
 }: TableProps) {
     const [order, setOrder] = useState<Order>('asc');
     const [orderBy, setOrderBy] = useState<string>('');
@@ -179,10 +193,25 @@ export default function TableComponent({
         return stableSort(filteredRows, getComparator(order, orderBy));
     }, [filteredRows, order, orderBy]);
 
+
+    const [page, setPage] = useState(0);
+    const [rowsPerPage, setRowsPerPage] = useState(rowPerPage);
+
+    const handleChangePage = (event: unknown, newPage: number) => {
+        setPage(newPage);
+    };
+
+    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setRowsPerPage(+event.target.value);
+        setPage(0);
+    };
+
+
+
     return (
         <Paper sx={{ width: '100%', overflow: 'hidden' }}>
             <TableContainer sx={{ maxHeight }}>
-                <Table stickyHeader>
+                <Table stickyHeader aria-label="sticky table">
                     <EnhancedTableHead
                         order={order}
                         orderBy={orderBy}
@@ -193,7 +222,7 @@ export default function TableComponent({
                         tableHeaderBgColor={tableHeaderBgColor}
                     />
                     <TableBody>
-                        {sortedRows.map((row, index) => {
+                        {sortedRows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => {
                             const isSelected = selectedRowId === row.id;
                             return (
                                 <TableRow
@@ -208,34 +237,49 @@ export default function TableComponent({
                                         },
                                         '&.Mui-selected:hover': {
                                             backgroundColor: `${hoverColor}`,
-                                        }
+                                        },
+                                        height: `${rowHeight}`
                                     }}
                                 >
-                                    {headCells.map((headCell) => (
-                                        <TableCell 
-                                            key={`${row.id}-${headCell.id}`}
-                                            sx={{ padding: "8px 16px" }}
-                                        >
-                                            {row[headCell.id]}
-                                        </TableCell>
-                                    ))}
-                                </TableRow>
-                            );
+                        {headCells.map((headCell) => (
+                            <TableCell
+                                key={`${row.id}-${headCell.id}`}
+                            >
+                                {row[headCell.id]}
+                            </TableCell>
+                        ))}
+                    </TableRow>
+                    );
                         })}
-                        {sortedRows.length === 0 && (
-                            <TableRow>
-                                <TableCell 
-                                    colSpan={headCells.length} 
-                                    align="center"
-                                    sx={{ padding: "24px" }}
-                                >
-                                    No data found
-                                </TableCell>
-                            </TableRow>
-                        )}
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        </Paper>
+                    {sortedRows.length === 0 && (
+                        <TableRow>
+                            <TableCell
+                                colSpan={headCells.length}
+                                align="center"
+                                sx={{ padding: "24px" }}
+                            >
+                                No data found
+                            </TableCell>
+                        </TableRow>
+                    )}
+                </TableBody>
+            </Table>
+        </TableContainer>
+            {
+
+        usePagination && (
+            <TablePagination
+                rowsPerPageOptions={rowPerPageOpt}
+                component="div"
+                count={rows.length}
+                rowsPerPage={rowPerPage}
+                page={page}
+                onPageChange={handleChangePage}
+                onRowsPerPageChange={handleChangeRowsPerPage}
+            />
+        )
+    }
+
+        </Paper >
     );
 }

@@ -14,17 +14,17 @@ export default function DatePickerPage() {
                     width: '100%',
                     overflow: 'hidden' // Extra safety
                 }}>
-                      <Box
+                <Box
                     sx={{
-                        
+
                         borderRadius: '8px',
-                       
-                        mb:3,
+
+                        mb: 3,
                     }} >
                     <h3>Date Picker</h3>
-                  
+                    <h5 style={{ color: "red" }}>Remind you can click the submit button and then open F12 console to see form data</h5>
                 </Box>
-                <DatePickerDemo1/>
+                <DatePickerDemo1 />
             </Container>
         </>
     )

@@ -3,12 +3,14 @@
 import CodeViewer from "@/components/common/CodeViewer";
 import CustomTextField from "@/components/common/CustomTextField";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Box, TextField } from "@mui/material"
+import { Box, IconButton, TextField } from "@mui/material"
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import PersonIcon from '@mui/icons-material/Person';
 import KeyIcon from '@mui/icons-material/Key';
 import { useState } from "react";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Visibility from "@mui/icons-material/Visibility";
 
 const schema = yup.object({
     username: yup.string().required(),
@@ -26,43 +28,97 @@ export default function IconTextField() {
         }
     })
     const [iconCode, setIconCode] = useState<string>(`
-        <Box sx={{
-            marginTop: "24px",
-            width:"250px"                      // wider gap looks better in demos
-        }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap:"5px" }}>
-            <CustomTextField
-                placeholder="username" 
-                form={form}
-                formFieldName="username"
-                fullWidth={false}
-                inputTitle="Username"
-                variant="outlined"
-                iconPosition="start"
-                IconComponent={PersonIcon}
-                margin="none"
-                label="username"
-            />
-            <CustomTextField
-                placeholder="password"
-                form={form}
-                formFieldName="password"
-                fullWidth={false}
-                inputTitle="Password"
-                variant="outlined"
-                iconPosition="end"
-                IconComponent={KeyIcon}
-                margin="none"
-            />
+    const [showPassword, setShowPassword] = useState(false);
+
+    const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+    const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
+    };
+
+    const handleMouseUpPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
+    };
+
+
+    const VisiblePwd = 
+    <IconButton
+        aria-label={
+            showPassword ? 'hide the password' : 'display the password'
+        }
+        onClick={handleClickShowPassword}
+        onMouseDown={handleMouseDownPassword}
+        onMouseUp={handleMouseUpPassword}
+        edge="end"
+    >
+        {showPassword ? <VisibilityOff /> : <Visibility />}
+    </IconButton>
+        
+    return(
+        <>
+         <Box sx={{
+                    marginTop: "24px",
+                    width: "250px"                      // wider gap looks better in demos
+                }}>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+                <CustomTextField
+                    placeholder="username"
+                    form={form}
+                    formFieldName="username"
+                    fullWidth={false}
+                    inputTitle="Username"
+                    variant="outlined"
+                    StartAndornment={<PersonIcon />}
+                    margin="none"
+                />
+                <CustomTextField
+                    placeholder="password"
+                    form={form}
+                    formFieldName="password"
+                    fullWidth={false}
+                    inputTitle="Password"
+                    type={showPassword ? 'text' : 'password'}
+                    variant="outlined"
+                    StartAndornment={<KeyIcon />}
+                    EndAndornment={VisiblePwd}
+                    margin="none"
+                />
             </Box>
         </Box>
-        </Box>
-        
+        </>
+        )
         `)
 
     const changeIconCode = (content: string) => {
         setIconCode(content);
     }
+
+
+    const [showPassword, setShowPassword] = useState(false);
+
+    const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+    const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
+    };
+
+    const handleMouseUpPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
+    };
+
+
+    const VisiblePwd =
+        <IconButton
+            aria-label={
+                showPassword ? 'hide the password' : 'display the password'
+            }
+            onClick={handleClickShowPassword}
+            onMouseDown={handleMouseDownPassword}
+            onMouseUp={handleMouseUpPassword}
+            edge="end"
+        >
+            {showPassword ? <VisibilityOff /> : <Visibility />}
+        </IconButton>
 
     return (
         <>
@@ -71,15 +127,15 @@ export default function IconTextField() {
                     mt: 4,
                     minWidth: '856px', // Adjust width as needed
                     borderRadius: '8px',
-
+                    fontSize:"16px"
                 }} >
                 <h3>Icon</h3>
                 <br />
                 There are two param:
                 <br />
-                iconPosition - control the icon is end or start
+                StartAndornment - control the start element in TextField. it can be Icon, string or ReactNode
                 <br />
-                icon - set the icon element * must be marterial icon
+                EndAndornment - control the end element in TextField. it can be Icon, string or ReactNode
                 <Box sx={{
                     marginTop: "24px",
                     width: "250px"                      // wider gap looks better in demos
@@ -92,8 +148,7 @@ export default function IconTextField() {
                             fullWidth={false}
                             inputTitle="Username"
                             variant="outlined"
-                            iconPosition="start"
-                            IconComponent={PersonIcon}
+                            StartAndornment={<PersonIcon />}
                             margin="none"
                         />
                         <CustomTextField
@@ -102,9 +157,10 @@ export default function IconTextField() {
                             formFieldName="password"
                             fullWidth={false}
                             inputTitle="Password"
+                            type={showPassword ? 'text' : 'password'}
                             variant="outlined"
-                            iconPosition="end"
-                            IconComponent={KeyIcon}
+                            StartAndornment={<KeyIcon />}
+                            EndAndornment={VisiblePwd}
                             margin="none"
                         />
                     </Box>

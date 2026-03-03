@@ -139,14 +139,15 @@ export default function DiffVariant() {
                     mt: 4,
                     minWidth: '856px',
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px"
                 }}
             >
                 <h3>Different variant TextField</h3>
                 <br />
                 There are three variants with label or input title: outlined (default), filled, and standard.
                 <br />
-                They also have error handling, you can click submit without typing to see it.
+                They also have error handling, you can click the submit button without typing to review it.
 
                 <Box
                     component="form"

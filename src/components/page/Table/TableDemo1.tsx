@@ -64,7 +64,7 @@ const headCells: readonly HeadCell[] = [
     {
         id: "address",
         label: "Address",
-        disableSorting: true,
+        disableSorting: false,
         disableSearch: true,
     },
 ];
@@ -75,16 +75,6 @@ export default function Table() {
     const [rows, setRows] = useState<Client[]>(clients)
 
     const [TableCode, setTableCode] = useState<string>(`
-        "use client"
-        import CustTable from "@/components/common/CustTable";
-        import {Client} from "../../templateData/client.types"
-        import {clients} from "../../templateData/client.types"
-        import { useState } from "react";
-        import * as yup from "yup";
-        import { yupResolver } from "@hookform/resolvers/yup";
-        import { useForm } from "react-hook-form";
-        import EditFormComponent from "@/components/common/EditFormComponent";
-
         interface HeadCell {
             id: keyof Client;
             label: string;
@@ -140,7 +130,7 @@ export default function Table() {
             {
                 id: "address",
                 label: "Address",
-                disableSorting: true,
+                disableSorting: false,
                 disableSearch: true,
             },
         ];
@@ -197,23 +187,26 @@ export default function Table() {
             return(
                 <>
                     <CustTable
-                    rows={clients}
-                    headCells={headCells}
-                    selectedRowId={selectedRowId}
-                    handleRowClick={handleRowClick}
+                        rows={clients}
+                        headCells={headCells}
+                        selectedRowId={selectedRowId}
+                        handleRowClick={handleRowClick}
+                        maxHeight={"450px"}
+                        usePagination={true}
+                        rowPerPage={5}
+                        rowPerPageOpt={[5, 10, 25]}
                     />
                     <EditFormComponent
-                    form={form}
-                    fields={Formfields}
-                    title={"Client Form"}
-                    handleUpdate={handleSubmit}
+                        form={form}
+                        fields={Formfields}
+                        title={"Client Form"}
+                        handleUpdate={handleSubmit}
                     />
-                </>
             )  
     `)
 
-    const updateContent = (content:string) =>{
-        
+    const updateContent = (content: string) => {
+
         setTableCode(content)
 
     }
@@ -253,12 +246,12 @@ export default function Table() {
         console.log(data)
     }
 
-    const Formfields: Array<{ name: string; label: string; type: string, disabled?: boolean, optional?: string, multline?: boolean, maxRow?: number; }> = [
+    const Formfields: Array<{ name: string; label: string; type: string, disabled?: boolean, optional?: string, multline?: boolean, maxRow?: number,NumberSettingLst?: { min: number, max: number, step: number } }> = [
         { name: "clientCode", label: "Client Code", type: "text", disabled: true },
         { name: "fullName", label: "Full Name", type: "text" },
         { name: "email", label: "Email", type: "text" },
         { name: "phone", label: "Phone", type: "text" },
-        { name: "dateOfBirth", label: "Date of Birth", type: "text" },
+        { name: "dateOfBirth", label: "Date of Birth", type: "datepicker" },
         { name: "gender", label: "Gender", type: "text" },
         { name: "address", label: "Address", type: "text", multline: true, maxRow: 4 },
     ]
@@ -270,6 +263,10 @@ export default function Table() {
                 headCells={headCells}
                 selectedRowId={selectedRowId}
                 handleRowClick={handleRowClick}
+                maxHeight={"450px"}
+                usePagination={true}
+                rowPerPage={5}
+                rowPerPageOpt={[5, 10, 25]}
             />
             <EditFormComponent
                 form={form}
@@ -278,8 +275,8 @@ export default function Table() {
                 handleUpdate={handleSubmit}
             />
             <CodeViewer
-            content={TableCode}
-            setContent={updateContent}
+                content={TableCode}
+                setContent={updateContent}
             />
         </>
     )

@@ -21,6 +21,7 @@ export default function SelectPage(){
                         gap:"20px"
                     }} >
                     <h3>Select</h3>
+                      <h5 style={{color:"red"}}>Remind you can click the submit button and then open F12 console to see form data</h5>
                   <SelectDemo/>
                 </Box>
                 

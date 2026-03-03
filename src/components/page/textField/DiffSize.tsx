@@ -123,7 +123,8 @@ export default function DiffSize() {
                     mt: 4,
                     minWidth: '856px', // Adjust width as needed
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px"
                 }} >
                 <h3>Different Size TextFields</h3>
                 <br />
@@ -134,6 +135,7 @@ export default function DiffSize() {
                     justifyContent: "flex-start",
                     alignItems: "flex-end",           // ← key: align baselines
                     gap: "32px",                      // wider gap looks better in demos
+                    
                 }}>
                     <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <CustomTextField

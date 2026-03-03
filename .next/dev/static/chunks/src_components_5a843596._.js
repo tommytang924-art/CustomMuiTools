@@ -53,7 +53,6 @@ __turbopack_context__.s([
     "default",
     ()=>CustomTextField
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_define_property$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_define_property.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_object_spread.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_object_spread_props.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_without_properties$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_object_without_properties.js [app-client] (ecmascript)");
@@ -69,21 +68,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
-;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 function CustomTextField(_0) {
-    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, IconComponent = _0.IconComponent, _0_iconPosition = _0.iconPosition, iconPosition = _0_iconPosition === void 0 ? "start" : _0_iconPosition, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 15 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 18 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 2 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, _0_inputTitleColor = _0.inputTitleColor, inputTitleColor = _0_inputTitleColor === void 0 ? "black" : _0_inputTitleColor, rest // Spread remaining TextFieldProps
+    var placeholder = _0.placeholder, _0_size = _0.size, size = _0_size === void 0 ? "medium" : _0_size, _0_variant = _0.variant, variant = _0_variant === void 0 ? "outlined" : _0_variant, label = _0.label, StartAndornment = _0.StartAndornment, EndAndornment = _0.EndAndornment, _0_fullWidth = _0.fullWidth, fullWidth = _0_fullWidth === void 0 ? true : _0_fullWidth, borderColor = _0.borderColor, textColor = _0.textColor, bgColor = _0.bgColor, form = _0.form, inputTitle = _0.inputTitle, formFieldName = _0.formFieldName, explicitMultiline = _0.multiline, rows = _0.rows, maxRows = _0.maxRows, _0_multilineLabelOffset = _0.multilineLabelOffset, multilineLabelOffset = _0_multilineLabelOffset === void 0 ? 12 : _0_multilineLabelOffset, _0_fontSize = _0.fontSize, fontSize = _0_fontSize === void 0 ? 16 : _0_fontSize, _0_labelFontSize = _0.labelFontSize, labelFontSize = _0_labelFontSize === void 0 ? 16 : _0_labelFontSize, labelColor = _0.labelColor, _0_borderWidth = _0.borderWidth, borderWidth = _0_borderWidth === void 0 ? 1 : _0_borderWidth, hoverBorderColor = _0.hoverBorderColor, focusedBorderColor = _0.focusedBorderColor, _0_margin = _0.margin, margin = _0_margin === void 0 ? "dense" : _0_margin, _0_inputTitleColor = _0.inputTitleColor, inputTitleColor = _0_inputTitleColor === void 0 ? "black" : _0_inputTitleColor, type = _0.type, ref = _0.ref, rest // Spread remaining TextFieldProps
      = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_without_properties$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])(_0, [
         "placeholder",
         "size",
         "variant",
         "label",
-        "IconComponent",
-        "iconPosition",
+        "StartAndornment",
+        "EndAndornment",
         "fullWidth",
         "borderColor",
         "textColor",
@@ -102,7 +100,9 @@ function CustomTextField(_0) {
         "hoverBorderColor",
         "focusedBorderColor",
         "margin",
-        "inputTitleColor"
+        "inputTitleColor",
+        "type",
+        "ref"
     ]);
     _s();
     var theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
@@ -122,11 +122,11 @@ function CustomTextField(_0) {
                             children: inputTitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/common/CustomTextField.tsx",
-                            lineNumber: 76,
+                            lineNumber: 80,
                             columnNumber: 28
                         }, void 0),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, field, rest), {
-                            // {...(useLabel && { label })}
+                            type: type,
                             label: label ? label : "",
                             placeholder: placeholder,
                             variant: variant,
@@ -138,32 +138,40 @@ function CustomTextField(_0) {
                             rows: rows,
                             maxRows: maxRows,
                             margin: margin,
+                            inputRef: ref,
                             InputLabelProps: {
                                 sx: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({
-                                    color: labelColor,
+                                    color: labelColor !== null && labelColor !== void 0 ? labelColor : "inherit",
                                     fontSize: "".concat(labelFontSize, "px"),
                                     "&.Mui-focused": {
-                                        color: labelColor
+                                        color: labelColor !== null && labelColor !== void 0 ? labelColor : "inherit"
                                     }
-                                }, isMultiline && {
+                                }, variant === "outlined" && {
                                     "&.MuiInputLabel-shrink": {
-                                        transform: "translate(14px, -".concat(multilineLabelOffset, "px) scale(0.75)")
+                                        transform: "translate(14px, -".concat(isMultiline ? multilineLabelOffset : 9, "px) scale(0.75)")
                                     }
                                 })
                             },
                             slotProps: {
-                                input: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, IconComponent && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_define_property$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, iconPosition === "start" ? "startAdornment" : "endAdornment", /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputAdornment$2f$InputAdornment$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputAdornment$3e$__["InputAdornment"], {
-                                    position: iconPosition,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconComponent, {}, void 0, false, {
+                                input: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread_props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({}, StartAndornment && {
+                                    startAdornment: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputAdornment$2f$InputAdornment$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputAdornment$3e$__["InputAdornment"], {
+                                        position: "start",
+                                        children: StartAndornment
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                        lineNumber: 114,
-                                        columnNumber: 25
+                                        lineNumber: 121,
+                                        columnNumber: 23
                                     }, void 0)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/common/CustomTextField.tsx",
-                                    lineNumber: 113,
-                                    columnNumber: 23
-                                }, void 0))), {
+                                }, EndAndornment && {
+                                    endAdornment: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$InputAdornment$2f$InputAdornment$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputAdornment$3e$__["InputAdornment"], {
+                                        position: "end",
+                                        children: EndAndornment
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/common/CustomTextField.tsx",
+                                        lineNumber: 128,
+                                        columnNumber: 23
+                                    }, void 0)
+                                }), {
                                     sx: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_object_spread$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])({
                                         color: textColor,
                                         backgroundColor: bgColor,
@@ -241,7 +249,7 @@ function CustomTextField(_0) {
                             })
                         }), void 0, false, {
                             fileName: "[project]/src/components/common/CustomTextField.tsx",
-                            lineNumber: 77,
+                            lineNumber: 81,
                             columnNumber: 13
                         }, void 0)
                     ]
@@ -249,7 +257,7 @@ function CustomTextField(_0) {
             }
         }, void 0, false, {
             fileName: "[project]/src/components/common/CustomTextField.tsx",
-            lineNumber: 71,
+            lineNumber: 75,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -331,28 +339,29 @@ function DiffVariant() {
                     mt: 4,
                     minWidth: '856px',
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "Different variant TextField"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 145,
+                        lineNumber: 146,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 146,
+                        lineNumber: 147,
                         columnNumber: 17
                     }, this),
                     "There are three variants with label or input title: outlined (default), filled, and standard.",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 148,
+                        lineNumber: 149,
                         columnNumber: 17
                     }, this),
-                    "They also have error handling, you can click submit without typing to see it.",
+                    "They also have error handling, you can click the submit button without typing to review it.",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         component: "form",
                         onSubmit: form.handleSubmit(handleSubmit),
@@ -381,7 +390,7 @@ function DiffVariant() {
                                         inputTitle: "Outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 166,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -394,13 +403,13 @@ function DiffVariant() {
                                         label: "Outlined With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 175,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 164,
+                                lineNumber: 165,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -420,7 +429,7 @@ function DiffVariant() {
                                         inputTitle: "Standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 187,
+                                        lineNumber: 188,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -433,13 +442,13 @@ function DiffVariant() {
                                         label: "Standard With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 197,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 186,
+                                lineNumber: 187,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -459,7 +468,7 @@ function DiffVariant() {
                                         inputTitle: "Filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 210,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -472,13 +481,13 @@ function DiffVariant() {
                                         label: "Filled With Label"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 219,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 208,
+                                lineNumber: 209,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -491,18 +500,18 @@ function DiffVariant() {
                                     children: "Submit"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 230,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                                lineNumber: 228,
+                                lineNumber: 229,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                        lineNumber: 151,
+                        lineNumber: 152,
                         columnNumber: 17
                     }, this)
                 ]
@@ -523,12 +532,12 @@ function DiffVariant() {
                     setContent: changeDiff
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                    lineNumber: 245,
+                    lineNumber: 246,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/DiffVariant.tsx",
-                lineNumber: 237,
+                lineNumber: 238,
                 columnNumber: 13
             }, this)
         ]
@@ -607,19 +616,20 @@ function DiffSize() {
                     mt: 4,
                     minWidth: '856px',
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "Different Size TextFields"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                        lineNumber: 128,
+                        lineNumber: 129,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                        lineNumber: 129,
+                        lineNumber: 130,
                         columnNumber: 17
                     }, this),
                     "There are two size: medium(default) and small",
@@ -649,7 +659,7 @@ function DiffSize() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 141,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -662,13 +672,13 @@ function DiffSize() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 150,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                lineNumber: 138,
+                                lineNumber: 140,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -688,7 +698,7 @@ function DiffSize() {
                                         variant: "standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 161,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -701,13 +711,13 @@ function DiffSize() {
                                         variant: "standard"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 170,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                lineNumber: 158,
+                                lineNumber: 160,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -727,7 +737,7 @@ function DiffSize() {
                                         variant: "filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 181,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -740,19 +750,19 @@ function DiffSize() {
                                         variant: "filled"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 190,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                                lineNumber: 178,
+                                lineNumber: 180,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                        lineNumber: 131,
+                        lineNumber: 132,
                         columnNumber: 17
                     }, this)
                 ]
@@ -773,12 +783,12 @@ function DiffSize() {
                     setContent: changeDiff
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                    lineNumber: 208,
+                    lineNumber: 210,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/page/textField/DiffSize.tsx",
-                lineNumber: 200,
+                lineNumber: 202,
                 columnNumber: 13
             }, this)
         ]
@@ -858,31 +868,32 @@ function TextArea() {
                     mt: 4,
                     minWidth: '856px',
                     borderRadius: '8px',
-                    minHeight: "200px"
+                    minHeight: "200px",
+                    fontSize: "16px"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "TextArea"
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 130,
+                        lineNumber: 131,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 131,
+                        lineNumber: 132,
                         columnNumber: 17
                     }, this),
                     "There are two param:",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 133,
+                        lineNumber: 134,
                         columnNumber: 17
                     }, this),
                     "rows - config the minimum rows of the textArea",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 135,
+                        lineNumber: 136,
                         columnNumber: 17
                     }, this),
                     "maxRows - config the maximum view rows of the textArea",
@@ -1014,7 +1025,7 @@ function TextArea() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/TextArea.tsx",
-                        lineNumber: 138,
+                        lineNumber: 139,
                         columnNumber: 17
                     }, this)
                 ]
@@ -1132,6 +1143,7 @@ function ColorParam() {
                 minHeight: "200px",
                 gap: "20px",
                 display: "flex",
+                fontSize: "16px",
                 flexDirection: "column"
             },
             children: [
@@ -1139,18 +1151,18 @@ function ColorParam() {
                     children: "Different Color Param in TextField"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 177,
+                    lineNumber: 178,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 178,
+                    lineNumber: 179,
                     columnNumber: 17
                 }, this),
                 "There are four param can be set - textColor, borderColor, labelColor, bgColor",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 180,
+                    lineNumber: 181,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1161,7 +1173,7 @@ function ColorParam() {
                     children: "* Reminder the bgColor apply to standard variant TextField would bind the placholder. Furthermore, the standard variant need to focus to show the label unlike other variant. So, you cannot see any text in standard variant when applying bgColor"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 181,
+                    lineNumber: 182,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1181,7 +1193,7 @@ function ColorParam() {
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 185,
+                            lineNumber: 186,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1194,7 +1206,7 @@ function ColorParam() {
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 194,
+                            lineNumber: 195,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1207,13 +1219,13 @@ function ColorParam() {
                             bgColor: "lightblue"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 203,
+                            lineNumber: 204,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 184,
+                    lineNumber: 185,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1233,7 +1245,7 @@ function ColorParam() {
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 214,
+                            lineNumber: 215,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1246,7 +1258,7 @@ function ColorParam() {
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 223,
+                            lineNumber: 224,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1259,13 +1271,13 @@ function ColorParam() {
                             textColor: "red"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 232,
+                            lineNumber: 233,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 213,
+                    lineNumber: 214,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1285,7 +1297,7 @@ function ColorParam() {
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 243,
+                            lineNumber: 244,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1298,7 +1310,7 @@ function ColorParam() {
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 252,
+                            lineNumber: 253,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1311,13 +1323,13 @@ function ColorParam() {
                             borderColor: "#FFC107"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 261,
+                            lineNumber: 262,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 242,
+                    lineNumber: 243,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1337,7 +1349,7 @@ function ColorParam() {
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 272,
+                            lineNumber: 273,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1350,7 +1362,7 @@ function ColorParam() {
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 281,
+                            lineNumber: 282,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1363,13 +1375,13 @@ function ColorParam() {
                             labelColor: "#ff0707ff"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                            lineNumber: 290,
+                            lineNumber: 291,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 271,
+                    lineNumber: 272,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CodeViewer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1377,7 +1389,7 @@ function ColorParam() {
                     setContent: changeCode
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/ColorParam.tsx",
-                    lineNumber: 300,
+                    lineNumber: 301,
                     columnNumber: 17
                 }, this)
             ]
@@ -1414,16 +1426,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/common/CustomTextField.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$yup$2f$dist$2f$yup$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@hookform/resolvers/yup/dist/yup.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/Box/Box.js [app-client] (ecmascript) <export default as Box>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/IconButton/IconButton.js [app-client] (ecmascript) <export default as IconButton>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/yup/index.esm.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Person$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Person.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Key$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Key.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$VisibilityOff$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/VisibilityOff.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Visibility$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Visibility.js [app-client] (ecmascript)");
 ;
 ;
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
+;
 ;
 ;
 ;
@@ -1446,43 +1463,76 @@ function IconTextField() {
             password: ""
         }
     });
-    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n        <Box sx={{\n            marginTop: "24px",\n            width:"250px"                      // wider gap looks better in demos\n        }}>\n        <Box sx={{ display: "flex", flexDirection: "column", gap:"5px" }}>\n            <CustomTextField\n                placeholder="username" \n                form={form}\n                formFieldName="username"\n                fullWidth={false}\n                inputTitle="Username"\n                variant="outlined"\n                iconPosition="start"\n                IconComponent={PersonIcon}\n                margin="none"\n                label="username"\n            />\n            <CustomTextField\n                placeholder="password"\n                form={form}\n                formFieldName="password"\n                fullWidth={false}\n                inputTitle="Password"\n                variant="outlined"\n                iconPosition="end"\n                IconComponent={KeyIcon}\n                margin="none"\n            />\n            </Box>\n        </Box>\n        </Box>\n        \n        '), 2), iconCode = _useState[0], setIconCode = _useState[1];
+    var _useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('\n    const [showPassword, setShowPassword] = useState(false);\n\n    const handleClickShowPassword = () => setShowPassword((show) => !show);\n\n    const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {\n        event.preventDefault();\n    };\n\n    const handleMouseUpPassword = (event: React.MouseEvent<HTMLButtonElement>) => {\n        event.preventDefault();\n    };\n\n\n    const VisiblePwd = \n    <IconButton\n        aria-label={\n            showPassword ? \'hide the password\' : \'display the password\'\n        }\n        onClick={handleClickShowPassword}\n        onMouseDown={handleMouseDownPassword}\n        onMouseUp={handleMouseUpPassword}\n        edge="end"\n    >\n        {showPassword ? <VisibilityOff /> : <Visibility />}\n    </IconButton>\n        \n    return(\n        <>\n         <Box sx={{\n                    marginTop: "24px",\n                    width: "250px"                      // wider gap looks better in demos\n                }}>\n            <Box sx={{ display: "flex", flexDirection: "column", gap: "5px" }}>\n                <CustomTextField\n                    placeholder="username"\n                    form={form}\n                    formFieldName="username"\n                    fullWidth={false}\n                    inputTitle="Username"\n                    variant="outlined"\n                    StartAndornment={<PersonIcon />}\n                    margin="none"\n                />\n                <CustomTextField\n                    placeholder="password"\n                    form={form}\n                    formFieldName="password"\n                    fullWidth={false}\n                    inputTitle="Password"\n                    type={showPassword ? \'text\' : \'password\'}\n                    variant="outlined"\n                    StartAndornment={<KeyIcon />}\n                    EndAndornment={VisiblePwd}\n                    margin="none"\n                />\n            </Box>\n        </Box>\n        </>\n        )\n        '), 2), iconCode = _useState[0], setIconCode = _useState[1];
     var changeIconCode = function(content) {
         setIconCode(content);
     };
+    var _useState1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_sliced_to_array$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false), 2), showPassword = _useState1[0], setShowPassword = _useState1[1];
+    var handleClickShowPassword = function() {
+        return setShowPassword(function(show) {
+            return !show;
+        });
+    };
+    var handleMouseDownPassword = function(event) {
+        event.preventDefault();
+    };
+    var handleMouseUpPassword = function(event) {
+        event.preventDefault();
+    };
+    var VisiblePwd = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
+        "aria-label": showPassword ? 'hide the password' : 'display the password',
+        onClick: handleClickShowPassword,
+        onMouseDown: handleMouseDownPassword,
+        onMouseUp: handleMouseUpPassword,
+        edge: "end",
+        children: showPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$VisibilityOff$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/components/page/textField/IconTextField.tsx",
+            lineNumber: 120,
+            columnNumber: 29
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Visibility$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/components/page/textField/IconTextField.tsx",
+            lineNumber: 120,
+            columnNumber: 49
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/page/textField/IconTextField.tsx",
+        lineNumber: 111,
+        columnNumber: 9
+    }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
                 mt: 4,
                 minWidth: '856px',
-                borderRadius: '8px'
+                borderRadius: '8px',
+                fontSize: "16px"
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: "Icon"
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 76,
+                    lineNumber: 132,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 77,
+                    lineNumber: 133,
                     columnNumber: 17
                 }, this),
                 "There are two param:",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 79,
+                    lineNumber: 135,
                     columnNumber: 17
                 }, this),
-                "iconPosition - control the icon is end or start",
+                "StartAndornment - control the start element in TextField. it can be Icon, string or ReactNode",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 81,
+                    lineNumber: 137,
                     columnNumber: 17
                 }, this),
-                "icon - set the icon element * must be marterial icon",
+                "EndAndornment - control the end element in TextField. it can be Icon, string or ReactNode",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                     sx: {
                         marginTop: "24px",
@@ -1502,12 +1552,15 @@ function IconTextField() {
                                 fullWidth: false,
                                 inputTitle: "Username",
                                 variant: "outlined",
-                                iconPosition: "start",
-                                IconComponent: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Person$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+                                StartAndornment: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Person$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                    fileName: "[project]/src/components/page/textField/IconTextField.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 46
+                                }, void 0),
                                 margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                                lineNumber: 88,
+                                lineNumber: 144,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$CustomTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1516,24 +1569,29 @@ function IconTextField() {
                                 formFieldName: "password",
                                 fullWidth: false,
                                 inputTitle: "Password",
+                                type: showPassword ? 'text' : 'password',
                                 variant: "outlined",
-                                iconPosition: "end",
-                                IconComponent: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Key$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+                                StartAndornment: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Key$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                    fileName: "[project]/src/components/page/textField/IconTextField.tsx",
+                                    lineNumber: 162,
+                                    columnNumber: 46
+                                }, void 0),
+                                EndAndornment: VisiblePwd,
                                 margin: "none"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                                lineNumber: 99,
+                                lineNumber: 154,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                        lineNumber: 87,
+                        lineNumber: 143,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 83,
+                    lineNumber: 139,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1548,23 +1606,23 @@ function IconTextField() {
                         setContent: changeIconCode
                     }, void 0, false, {
                         fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                        lineNumber: 120,
+                        lineNumber: 176,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-                    lineNumber: 112,
+                    lineNumber: 168,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/page/textField/IconTextField.tsx",
-            lineNumber: 69,
+            lineNumber: 125,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(IconTextField, "Sqi7rE9WuNlYmGFQbnhq3tEhWvs=", false, function() {
+_s(IconTextField, "sEegHS/2Gtv1FOjgb5Zv2vSrfcI=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
@@ -1616,22 +1674,23 @@ function TextFieldComponent() {
                     sx: {
                         minWidth: '856px',
                         borderRadius: '8px',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
+                        fontSize: "16px"
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             children: "Text Field"
                         }, void 0, false, {
                             fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                            lineNumber: 36,
+                            lineNumber: 37,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 21
                         }, this),
-                        "Here is the demo of MyTextField Component. At the bottom, there are table to show the parameter of that component"
+                        "Here is the demo of CustomTextField Component. This component is basic on the MUI library to build it."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
@@ -1640,28 +1699,28 @@ function TextFieldComponent() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$DiffVariant$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 40,
-                    columnNumber: 21
+                    lineNumber: 41,
+                    columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$DiffSize$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 41,
-                    columnNumber: 21
+                    lineNumber: 42,
+                    columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$TextArea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 42,
-                    columnNumber: 21
+                    lineNumber: 43,
+                    columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$ColorParam$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 43,
-                    columnNumber: 21
+                    lineNumber: 44,
+                    columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$jsx$2d$dev$2d$runtime$2f$dist$2f$emotion$2d$react$2d$jsx$2d$dev$2d$runtime$2e$browser$2e$development$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$page$2f$textField$2f$IconTextField$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/page/textField/textFieldPage.tsx",
-                    lineNumber: 44,
-                    columnNumber: 21
+                    lineNumber: 45,
+                    columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {

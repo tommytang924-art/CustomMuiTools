@@ -1,77 +1,117 @@
-[00:00:04.282] Server  WARN    ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
-[00:00:04.934] Server  LOG     ✓ Ready in 4s
-[00:19:21.868] Server  LOG     ✓ Compiled in 24ms
-[00:19:23.863] Server  LOG     ✓ Compiled in 15ms
-[00:20:08.728] Server  LOG     ✓ Compiled in 28ms
-[00:20:31.495] Server  LOG     ✓ Compiled in 14ms
-[00:21:14.673] Server  LOG     ✓ Compiled in 96ms
-[00:21:14.751] Browser WARN    MUI: You have provided an out-of-range value `Tyson Men` for the select component.
-Consider providing a value that matches one of the available options or ''.
-The available values are `John Doe`, `Jane Smith`, `Bob Johnson`, `Alice Williams`, `Yip Men`.
-[00:21:16.076] Browser WARN    MUI: You have provided an out-of-range value `Tyson Men` for the select component.
-Consider providing a value that matches one of the available options or ''.
-The available values are `John Doe`, `Jane Smith`, `Bob Johnson`, `Alice Williams`, `Yip Men`.
-[00:22:00.560] Server  LOG     ✓ Compiled in 66ms
-[00:22:00.669] Browser ERROR   uncaughtError: TypeError: selected.map is not a function
-[00:27:21.107] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:27:21.454] Server  ERROR   ⨯ TypeError: selected.map is not a function
-[00:27:21.455] Server  LOG     ✓ Compiled in 32ms
-[00:27:22.387] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+[00:00:02.356] Server  WARN    ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
+[00:00:02.587] Server  LOG     ✓ Ready in 2.1s
+[00:00:40.740] Server  LOG     ✓ Compiled in 33ms
+[00:01:37.137] Server  LOG     ✓ Compiled in 21ms
+[00:01:58.299] Server  LOG     ✓ Compiled in 12ms
+[00:02:16.939] Server  LOG     ✓ Compiled in 12ms
+[00:02:20.800] Server  LOG     ✓ Compiled in 27ms
+[00:02:49.613] Server  LOG     ✓ Compiled in 20ms
+[00:02:54.053] Server  LOG     ✓ Compiled in 15ms
+[00:55:39.197] Server  LOG     ✓ Compiled in 38ms
+[00:55:59.657] Server  LOG     ✓ Compiled in 35ms
+[00:56:14.361] Server  LOG     ✓ Compiled in 17ms
+[00:57:14.609] Server  LOG     ✓ Compiled in 26ms
+[00:57:27.477] Server  LOG     ✓ Compiled in 9ms
+[00:57:37.097] Server  LOG     ✓ Compiled in 18ms
+[00:57:58.796] Server  LOG     ✓ Compiled in 11ms
+[00:58:51.411] Server  LOG     ✓ Compiled in 9ms
+[00:59:34.224] Server  LOG     ✓ Compiled in 127ms
+[01:04:15.469] Server  LOG     ✓ Compiled in 12ms
+[01:05:29.811] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:29.999] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:30.651] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:30.851] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:31.035] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:31.194] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:31.415] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:31.606] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:05:31.833] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
+[01:06:07.011] Server  LOG     ✓ Compiled in 181ms
+[01:09:40.909] Server  LOG     ✓ Compiled in 40ms
+[01:09:40.979] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-selected.map is not a function
-[00:27:22.645] Browser ERROR   uncaughtError: TypeError: selected.map is not a function
-[00:28:19.732] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:28:19.764] Server  LOG     ✓ Compiled in 14ms
-[00:28:20.078] Server  ERROR   ⨯ Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:28:20.877] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+Previous: %s
+Incoming: %s useEffect [Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間),Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間)] [Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間),Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間), , , ]
+[01:11:21.044] Server  LOG     ✓ Compiled in 13ms
+[01:12:01.792] Server  LOG     ✓ Compiled in 19ms
+[01:12:03.158] Browser LOG     {"endDate":"Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[01:16:09.494] Browser WARN    MUI X: `view="meridiem"` is not a valid prop. It must be an element of `views=["minutes", "seconds"]`.
+[01:16:23.723] Browser LOG     {"MS":"Tue Mar 03 2026 00:15:15 GMT+0800 (香港標準時間)","normal":"Tue Mar 03 2026 17:35:10 GMT+0800 (香港標準時間)"}
+[01:17:31.194] Server  LOG     ✓ Compiled in 33ms
+[01:17:45.586] Server  LOG     ✓ Compiled in 18ms
+[01:18:00.935] Server  LOG     ✓ Compiled in 11ms
+[01:18:52.311] Server  LOG     ✓ Compiled in 18ms
+[01:18:54.403] Server  LOG     ✓ Compiled in 9ms
+[01:19:23.712] Browser LOG     {"multipleSelect":["Jane Smith","Bob Johnson","John Doe","Yip Men"],"singleSelect":"Bob Johnson"}
+[01:19:40.707] Browser LOG     {"price":99}
+[01:20:05.260] Browser LOG     {"dateBirth":"Sat Sep 08 2001 00:00:00 GMT+0800 (香港標準時間)","scheduler":"Sat Mar 28 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[01:20:29.205] Server  LOG     ✓ Compiled in 24ms
+[01:20:36.142] Browser LOG     {"dateBirth":"Sat Sep 08 2001 00:00:00 GMT+0800 (香港標準時間)","schedule":"Sat Mar 28 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[01:21:21.311] Server  LOG     ✓ Compiled in 92ms
+[01:21:32.414] Server  LOG     ✓ Compiled in 17ms
+[01:21:40.311] Server  LOG     ✓ Compiled in 18ms
+[01:21:56.970] Server  LOG     ✓ Compiled in 12ms
+[01:22:25.277] Server  LOG     ✓ Compiled in 25ms
+[01:22:30.511] Browser LOG     {"endDate":"Tue Apr 14 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Thu Mar 19 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[01:25:02.053] Server  LOG     ✓ Compiled in 20ms
+[01:30:54.912] Server  LOG     ✓ Compiled in 279ms
+[01:31:15.742] Server  LOG     ✓ Compiled in 41ms
+[01:31:48.108] Server  LOG     ✓ Compiled in 10ms
+[01:31:53.680] Browser LOG     {"endDate":"Tue Apr 07 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 11 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[01:32:56.911] Server  LOG     ✓ Compiled in 18ms
+[01:33:05.812] Server  LOG     ✓ Compiled in 12ms
+[01:33:31.512] Server  LOG     ✓ Compiled in 21ms
+[01:34:40.061] Server  LOG     ✓ Compiled in 17ms
+[01:34:51.464] Server  LOG     ✓ Compiled in 13ms
+[01:35:50.471] Server  LOG     ✓ Compiled in 18ms
+[01:36:27.021] Server  LOG     ✓ Compiled in 33ms
+[01:40:49.286] Server  LOG     ✓ Compiled in 717ms
+[01:40:49.390] Browser ERROR   ./src/components/common/CustTimePicker.tsx:56:21
+Parsing ecmascript source code failed
+  54 |         size,
+  55 |         height,
+> 56 |         ampm = false;
+     |                     ^
+  57 |         views = ['hours', 'minutes', 'seconds']
+  58 |     }: CustTimePickerProps
+  59 | ) {
 
-MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:28:21.096] Browser ERROR   uncaughtError: Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:28:43.231] Server  ERROR   ⨯ Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:28:43.925] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+Expected ',', got ';'
 
-MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:28:44.174] Browser ERROR   uncaughtError: Error: MUI: The `value` prop must be an array when using the `Select` component with `multiple`.
-[00:29:04.524] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:29:04.538] Server  LOG     ✓ Compiled in 235ms
-[00:29:38.482] Server  LOG     ✓ Compiled in 16ms
-[00:29:40.246] Server  LOG     ✓ Compiled in 20ms
-[00:30:36.998] Server  LOG     ✓ Compiled in 15ms
-[00:58:40.651] Server  LOG     ✓ Compiled in 9ms
-[00:58:56.724] Server  LOG     ✓ Compiled in 16ms
-[01:13:36.779] Server  LOG     ✓ Compiled in 185ms
-[01:37:43.841] Server  LOG     ✓ Compiled in 26ms
-[01:37:58.030] Server  LOG     ✓ Compiled in 13ms
-[01:40:39.459] Server  LOG     ✓ Compiled in 46ms
-[01:41:42.060] Server  LOG     ✓ Compiled in 144ms
-[01:42:43.263] Server  LOG     ✓ Compiled in 13ms
-[01:43:12.184] Server  LOG     ✓ Compiled in 11ms
-[01:43:15.385] Server  LOG     ✓ Compiled in 20ms
-[01:44:42.020] Server  LOG     ✓ Compiled in 12ms
-[01:46:08.238] Server  LOG     ✓ Compiled in 17ms
-[01:46:17.747] Server  LOG     ✓ Compiled in 13ms
-[01:46:43.765] Server  LOG     ✓ Compiled in 9ms
-[01:47:17.358] Server  LOG     ✓ Compiled in 21ms
-[01:47:22.092] Server  LOG     ✓ Compiled in 10ms
-[01:48:07.571] Server  LOG     ✓ Compiled in 20ms
-[01:48:18.956] Server  LOG     ✓ Compiled in 27ms
-[01:48:26.870] Server  LOG     ✓ Compiled in 22ms
-[01:48:50.984] Server  LOG     ✓ Compiled in 15ms
-[01:48:54.181] Server  LOG     ✓ Compiled in 11ms
-[01:53:14.076] Server  LOG     ✓ Compiled in 27ms
-[01:53:25.093] Server  LOG     ✓ Compiled in 15ms
-[01:53:44.494] Server  LOG     ✓ Compiled in 108ms
-[01:53:59.376] Browser LOG     {"multipleSelect":["Bob Johnson"],"singleSelect":"Bob Johnson"}
-[01:53:59.728] Browser LOG     {"multipleSelect":["Bob Johnson"],"singleSelect":"Bob Johnson"}
-[01:54:41.643] Server  LOG     ✓ Compiled in 16ms
-[01:55:02.387] Server  LOG     ✓ Compiled in 157ms
-[01:55:23.884] Server  LOG     ✓ Compiled in 17ms
-[01:55:43.536] Server  LOG     ✓ Compiled in 16ms
-[01:56:05.375] Server  LOG     ✓ Compiled in 23ms
-[01:56:14.495] Server  LOG     ✓ Compiled in 13ms
-[01:56:29.944] Server  LOG     ✓ Compiled in 19ms
-[01:56:54.742] Server  LOG     ✓ Compiled in 16ms
-[01:57:38.653] Server  LOG     ✓ Compiled in 17ms
-[01:59:25.060] Server  LOG     ✓ Compiled in 10ms
-[02:01:21.421] Server  LOG     ✓ Compiled in 15ms
-[02:02:40.990] Server  LOG     ✓ Compiled in 372ms
+Import traces:
+  Client Component Browser:
+    ./src/components/common/CustTimePicker.tsx [Client Component Browser]
+    ./src/components/page/TimePicker/TimePickerDemo1.tsx [Client Component Browser]
+    ./src/components/page/TimePicker/TimePickerPage.tsx [Client Component Browser]
+    ./src/components/page/TimePicker/TimePickerPage.tsx [Server Component]
+    ./src/app/(login)/dateAndTimePicker/timePicker/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/common/CustTimePicker.tsx [Client Component SSR]
+    ./src/components/page/TimePicker/TimePickerDemo1.tsx [Client Component SSR]
+    ./src/components/page/TimePicker/TimePickerPage.tsx [Client Component SSR]
+    ./src/components/page/TimePicker/TimePickerPage.tsx [Server Component]
+    ./src/app/(login)/dateAndTimePicker/timePicker/page.tsx [Server Component]
+[01:40:57.850] Server  LOG     ✓ Compiled in 190ms
+[01:41:20.564] Server  LOG     ✓ Compiled in 14ms
+[01:41:27.569] Server  LOG     ✓ Compiled in 19ms
+[01:42:16.918] Server  LOG     ✓ Compiled in 10ms
+[01:42:24.066] Server  LOG     ✓ Compiled in 28ms
+[01:49:02.334] Server  LOG     ✓ Compiled in 11ms
+[01:49:51.234] Server  LOG     ✓ Compiled in 36ms
+[01:50:11.464] Server  LOG     ✓ Compiled in 15ms
+[01:50:16.384] Server  LOG     ✓ Compiled in 9ms
+[01:53:14.237] Server  LOG     ✓ Compiled in 14ms
+[01:53:56.920] Server  LOG     ✓ Compiled in 13ms
+[01:55:59.916] Server  LOG     ✓ Compiled in 31ms
+[01:57:24.338] Server  LOG     ✓ Compiled in 14ms
+[01:57:25.920] Server  LOG     ✓ Compiled in 11ms
+[01:58:46.697] Server  LOG     ✓ Compiled in 22ms
+[01:59:34.902] Server  LOG     ✓ Compiled in 155ms
+[02:00:21.615] Server  LOG     ✓ Compiled in 21ms
+[02:00:37.255] Server  LOG     ✓ Compiled in 268ms
+[02:00:48.766] Browser LOG     {"endDate":"Wed Apr 15 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 18 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[02:01:14.551] Server  LOG     ✓ Compiled in 10ms
+[02:01:46.347] Server  LOG     ✓ Compiled in 120ms
+[02:02:19.731] Server  LOG     ✓ Compiled in 17ms
+[02:02:50.149] Server  LOG     ✓ Compiled in 14ms

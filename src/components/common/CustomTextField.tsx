@@ -11,8 +11,8 @@ interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" |
   variant?: "outlined" | "filled" | "standard"; // outlined is default
   label?: string;
   disabled?: boolean;
-  IconComponent?: React.ElementType;
-  iconPosition?: "start" | "end";
+  StartAndornment?: React.ReactNode | string;
+  EndAndornment?: React.ReactNode | string;
   fullWidth?: boolean;
   borderColor?: string; // border color
   textColor?: string;
@@ -32,6 +32,8 @@ interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" |
   focusedBorderColor?: string;
   margin?: "none" | "normal" | "dense";
   inputTitleColor?: string;
+  type?: string;
+  ref?: React.Ref<HTMLDivElement>;
 }
 
 export default function CustomTextField({
@@ -39,8 +41,8 @@ export default function CustomTextField({
   size = "medium",
   variant = "outlined",
   label,
-  IconComponent,
-  iconPosition = "start",
+  StartAndornment,
+  EndAndornment,
   fullWidth = true,
   borderColor,
   textColor,
@@ -51,15 +53,17 @@ export default function CustomTextField({
   multiline: explicitMultiline,
   rows,
   maxRows,
-  multilineLabelOffset = 15,
+  multilineLabelOffset = 12,
   fontSize = 16,
-  labelFontSize = 18,
+  labelFontSize = 16,
   labelColor,
-  borderWidth = 2,
+  borderWidth = 1,
   hoverBorderColor,
   focusedBorderColor,
   margin = "dense",
   inputTitleColor = "black",
+  type,
+  ref,
   ...rest // Spread remaining TextFieldProps
 }: CustomTextFieldProps) {
 
@@ -73,12 +77,11 @@ export default function CustomTextField({
         control={form.control}
         render={({ field, fieldState: { error } }) => (
           <>
-            {inputTitle && <InputLabel sx={{color:`${inputTitleColor}`}}>{inputTitle}</InputLabel>}
+            {inputTitle && <InputLabel sx={{ color: `${inputTitleColor}` }}>{inputTitle}</InputLabel>}
             <TextField
               {...field}
               {...rest}
-              // {...(useLabel && { label })}
-              
+              type={type}
               label={label ? label : ""}
               placeholder={placeholder}
               variant={variant}
@@ -90,36 +93,48 @@ export default function CustomTextField({
               rows={rows}
               maxRows={maxRows}
               margin={margin}
-              
+              inputRef={ref}
+             
 
               InputLabelProps={{
                 sx: {
-                  color: labelColor, // Default label color
+                  color: labelColor ?? "inherit",
                   fontSize: `${labelFontSize}px`,
+
                   "&.Mui-focused": {
-                    color: labelColor, // Match focused border for consistency
+                    color: labelColor ?? "inherit",
                   },
-                  ...(isMultiline && {
+
+                  // 🔥 Match official MUI shrink exactly (single-line + multiline)
+                  ...(variant === "outlined" && {
                     "&.MuiInputLabel-shrink": {
-                      transform: `translate(14px, -${multilineLabelOffset}px) scale(0.75)`,
+                      transform: `translate(14px, -${isMultiline ? multilineLabelOffset : 9
+                        }px) scale(0.75)`,
                     },
                   }),
                 },
               }}
               slotProps={{
                 input: {
-                  ...(IconComponent && {
-                    [iconPosition === "start" ? "startAdornment" : "endAdornment"]: (
-                      <InputAdornment position={iconPosition}>
-                        <IconComponent />
+                  ...(StartAndornment && {
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        {StartAndornment}
                       </InputAdornment>
-                    ),
+                    )
+                  }),
+                  ...(EndAndornment && {
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        {EndAndornment}
+                      </InputAdornment>
+                    )
                   }),
                   sx: {
                     color: textColor,
                     backgroundColor: bgColor,
                     fontSize: `${fontSize}px`,
-                    
+
                     // Filled variant specific handling
                     ...(variant === "filled" && bgColor && {
                       "&:hover": {
@@ -142,6 +157,7 @@ export default function CustomTextField({
                     "& .MuiOutlinedInput-notchedOutline": {
                       borderColor,
                       borderWidth: `${borderWidth}px`,
+    
                     },
                     "&:hover .MuiOutlinedInput-notchedOutline": {
                       borderColor: hoverBorderColor,
@@ -157,11 +173,6 @@ export default function CustomTextField({
                     "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
                       borderColor: theme.palette.action.disabled,
                     },
-                    // ...(isMultiline && {
-                    //   "&.MuiInputBase-multiline": {
-                    //     padding: "0 14px", // Consistent multiline padding
-                    //   },
-                    // }),
                   },
                 }),
                 // Standard variant underline customizations (if needed)

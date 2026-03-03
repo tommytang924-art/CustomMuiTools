@@ -32,16 +32,17 @@ export default function TextFieldComponent() {
                         minWidth: '856px', // Adjust width as needed
                         borderRadius: '8px',
                         overflow: 'hidden', // To handle inner borders cleanly
+                        fontSize: "16px"
                     }} >
                     <h3>Text Field</h3>
                     <br />
-                    Here is the demo of MyTextField Component. At the bottom, there are table to show the parameter of that component
+                    Here is the demo of CustomTextField Component. This component is basic on the MUI library to build it.
                 </Box>
-                    <DiffVariant />
-                    <DiffSize/>
-                    <TextArea/>
-                    <ColorParam/>
-                    <IconTextField/>
+                <DiffVariant />
+                <DiffSize />
+                <TextArea />
+                <ColorParam />
+                <IconTextField />
             </Container>
         </>
     )

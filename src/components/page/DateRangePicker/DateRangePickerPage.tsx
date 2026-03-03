@@ -1,0 +1,31 @@
+"use client"
+
+import { Box, Container } from "@mui/material"
+import DateRangePickerDemo1 from "./DateRangePickerDemo1"
+
+export default function DateRangePickerPage() {
+
+    return (
+        <>
+            <Container maxWidth={false}
+                sx={{
+                    mt: 2,
+                    mb: 2,
+                    width: '100%',
+                    overflow: 'hidden' // Extra safety
+                }}>
+                <Box
+                    sx={{
+
+                        borderRadius: '8px',
+
+                        mb: 3,
+                    }} >
+                    <h3>Date Range Picker</h3>
+                    <h5 style={{ color: "red" }}>Remind you can click the submit button and then open F12 console to see form data</h5>
+                </Box>
+                <DateRangePickerDemo1 />
+            </Container>
+        </>
+    )
+}
