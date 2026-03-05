@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# MUI Tools - Component Library & Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Next.js-based component library and demonstration platform showcasing custom Material-UI (MUI) components with enhanced functionality. This project provides reusable, production-ready components with interactive demos and documentation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Custom MUI Components**: Enhanced Material-UI components with additional features
+- **Interactive Demos**: Live examples with code viewers for each component
+- **Form Management**: React Hook Form integration with Yup validation
+- **Authentication**: NextAuth.js integration for secure access
+- **State Management**: Redux Toolkit for global state
+- **Responsive Design**: Mobile-friendly layouts and components
+- **TypeScript**: Full type safety across the application
 
-### `npm start`
+## Components Library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Input Fields
+- **CustomTextField**: Enhanced text input with variants, sizes, and icon support
+- **CustomSelect**: Dropdown select with search and custom styling
+- **NumberField**: Numeric input with formatting and validation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Date & Time Pickers
+- **CustDatePicker**: Material-UI date picker with custom styling
+- **CustomDateRangePicker**: Custom date range picker built with react-datepicker
+- **CustTimePicker**: Time selection component
 
-### `npm test`
+### Data Display
+- **CustTable**: Advanced data table with:
+  - Sorting and filtering
+  - Optional pagination
+  - Row selection
+  - Sticky headers
+  - Customizable styling
+  - Export functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Forms
+- **EditFormComponent**: Form wrapper with validation and submission handling
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Framework**: Next.js 14+ (App Router)
+- **UI Library**: Material-UI (MUI) v7
+- **Language**: TypeScript
+- **State Management**: Redux Toolkit
+- **Form Handling**: React Hook Form + Yup
+- **Authentication**: NextAuth.js
+- **Date Handling**: date-fns, dayjs, react-datepicker
+- **Styling**: SCSS, Emotion
+- **Icons**: MUI Icons, FontAwesome, React Icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js 18+ 
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd muitools
