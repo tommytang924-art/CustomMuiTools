@@ -2,6 +2,7 @@
 
 import { Box, Container } from "@mui/material"
 import DateRangePickerDemo1 from "./DateRangePickerDemo1"
+import DateRangePickerPropsTable from "./DateRangePickerPropsTable"
 
 export default function DateRangePickerPage() {
 
@@ -25,6 +26,7 @@ export default function DateRangePickerPage() {
                     <h5 style={{ color: "red" }}>Remind you can click the submit button and then open F12 console to see form data</h5>
                 </Box>
                 <DateRangePickerDemo1 />
+                <DateRangePickerPropsTable/>
             </Container>
         </>
     )

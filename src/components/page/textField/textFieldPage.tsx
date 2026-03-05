@@ -8,13 +8,7 @@ import DiffSize from "./DiffSize";
 import TextArea from "./TextArea";
 import ColorParam from "./ColorParam";
 import IconTextField from "./IconTextField";
-interface TableData {
-    id: string;
-    name: string;
-    type: string;
-    default: string | null;
-    Description: string;
-}
+import TextFieldPropsTable from "./TextFieldPropsTable";
 
 export default function TextFieldComponent() {
 
@@ -43,6 +37,7 @@ export default function TextFieldComponent() {
                 <TextArea />
                 <ColorParam />
                 <IconTextField />
+                <TextFieldPropsTable/>
             </Container>
         </>
     )

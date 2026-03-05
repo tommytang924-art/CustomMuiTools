@@ -3,6 +3,7 @@
 import { Box, Container, Paper } from "@mui/material";
 import { useState } from "react";
 import Table from "./TableDemo1";
+import TablePropsTable from "./TablePropsTable";
 
 
 export default function TablePageComponent() {
@@ -26,6 +27,7 @@ export default function TablePageComponent() {
                     Here is the demo of Table Component. At the bottom, there are table to show the parameter of that component
                 </Box> */}
                 <Table/>
+                <TablePropsTable/>
             </Container>
         </>
     )

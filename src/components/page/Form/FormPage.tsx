@@ -3,6 +3,7 @@
 import { Box, Container, Paper } from "@mui/material";
 import { useState } from "react";
 import Form from "./FormDemo1";
+import FormPropsTable from "./FormPropsTable";
 
 
 export default function FormPageComponent() {
@@ -26,6 +27,7 @@ export default function FormPageComponent() {
                     <h5 style={{color:"red"}}>Remind you can click the submit button and then open F12 console to see form data</h5>
                 </Box>
                 <Form/>
+                <FormPropsTable/>
             </Container>
         </>
     )

@@ -2,6 +2,7 @@
 
 import { Box, Container } from "@mui/material"
 import NumberFieldDemo from "./NumberFieldDemo"
+import NumberFieldPropsTable from "./NumberFieldPropsTable"
 
 export default function DatePickerPage() {
 
@@ -25,6 +26,7 @@ export default function DatePickerPage() {
                       <h5 style={{color:"red"}}>Remind you can click the submit button and then open F12 console to see form data</h5>
                 </Box>
                 <NumberFieldDemo/>
+                <NumberFieldPropsTable/>
             </Container>
         </>
     )

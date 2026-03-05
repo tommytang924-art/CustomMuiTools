@@ -99,10 +99,10 @@ export default function FormDemo1() {
             />
 
             <br />
-        <CodeViewer
-        content={formCode}
-        setContent={changContent}
-        />
+            <CodeViewer
+                content={formCode}
+                setContent={changContent}
+            />
         </>
     )
 }

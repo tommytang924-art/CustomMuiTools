@@ -1,117 +1,1528 @@
-[00:00:02.356] Server  WARN    ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
-[00:00:02.587] Server  LOG     ✓ Ready in 2.1s
-[00:00:40.740] Server  LOG     ✓ Compiled in 33ms
-[00:01:37.137] Server  LOG     ✓ Compiled in 21ms
-[00:01:58.299] Server  LOG     ✓ Compiled in 12ms
-[00:02:16.939] Server  LOG     ✓ Compiled in 12ms
-[00:02:20.800] Server  LOG     ✓ Compiled in 27ms
-[00:02:49.613] Server  LOG     ✓ Compiled in 20ms
-[00:02:54.053] Server  LOG     ✓ Compiled in 15ms
-[00:55:39.197] Server  LOG     ✓ Compiled in 38ms
-[00:55:59.657] Server  LOG     ✓ Compiled in 35ms
-[00:56:14.361] Server  LOG     ✓ Compiled in 17ms
-[00:57:14.609] Server  LOG     ✓ Compiled in 26ms
-[00:57:27.477] Server  LOG     ✓ Compiled in 9ms
-[00:57:37.097] Server  LOG     ✓ Compiled in 18ms
-[00:57:58.796] Server  LOG     ✓ Compiled in 11ms
-[00:58:51.411] Server  LOG     ✓ Compiled in 9ms
-[00:59:34.224] Server  LOG     ✓ Compiled in 127ms
-[01:04:15.469] Server  LOG     ✓ Compiled in 12ms
-[01:05:29.811] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:29.999] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:30.651] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:30.851] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:31.035] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:31.194] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:31.415] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:31.606] Server  ERROR   ⨯ Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:05:31.833] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/dateAndTimePicker/dateRange/page"
-[01:06:07.011] Server  LOG     ✓ Compiled in 181ms
-[01:09:40.909] Server  LOG     ✓ Compiled in 40ms
-[01:09:40.979] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+[00:00:07.091] Server  LOG     ✓ Ready in 5.9s
+[00:00:56.761] Server  LOG     ✓ Compiled in 31ms
+[00:01:05.777] Server  LOG     ✓ Compiled in 10ms
+[00:01:18.616] Server  LOG     ✓ Compiled in 13ms
+[00:01:57.084] Server  LOG     ✓ Compiled in 23ms
+[00:02:51.854] Server  LOG     ✓ Compiled in 21ms
+[00:02:57.822] Server  LOG     ✓ Compiled in 22ms
+[00:04:18.464] Server  LOG     ✓ Compiled in 40ms
+[00:05:05.011] Server  LOG     ✓ Compiled in 28ms
+[00:05:14.787] Server  LOG     ✓ Compiled in 27ms
+[00:05:35.240] Server  LOG     ✓ Compiled in 11ms
+[00:05:49.087] Server  LOG     ✓ Compiled in 10ms
+[00:10:06.494] Server  LOG     ✓ Compiled in 38ms
+[00:14:22.291] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
 
-Previous: %s
-Incoming: %s useEffect [Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間),Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間)] [Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間),Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間), , , ]
-[01:11:21.044] Server  LOG     ✓ Compiled in 13ms
-[01:12:01.792] Server  LOG     ✓ Compiled in 19ms
-[01:12:03.158] Browser LOG     {"endDate":"Wed Apr 08 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 04 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[01:16:09.494] Browser WARN    MUI X: `view="meridiem"` is not a valid prop. It must be an element of `views=["minutes", "seconds"]`.
-[01:16:23.723] Browser LOG     {"MS":"Tue Mar 03 2026 00:15:15 GMT+0800 (香港標準時間)","normal":"Tue Mar 03 2026 17:35:10 GMT+0800 (香港標準時間)"}
-[01:17:31.194] Server  LOG     ✓ Compiled in 33ms
-[01:17:45.586] Server  LOG     ✓ Compiled in 18ms
-[01:18:00.935] Server  LOG     ✓ Compiled in 11ms
-[01:18:52.311] Server  LOG     ✓ Compiled in 18ms
-[01:18:54.403] Server  LOG     ✓ Compiled in 9ms
-[01:19:23.712] Browser LOG     {"multipleSelect":["Jane Smith","Bob Johnson","John Doe","Yip Men"],"singleSelect":"Bob Johnson"}
-[01:19:40.707] Browser LOG     {"price":99}
-[01:20:05.260] Browser LOG     {"dateBirth":"Sat Sep 08 2001 00:00:00 GMT+0800 (香港標準時間)","scheduler":"Sat Mar 28 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[01:20:29.205] Server  LOG     ✓ Compiled in 24ms
-[01:20:36.142] Browser LOG     {"dateBirth":"Sat Sep 08 2001 00:00:00 GMT+0800 (香港標準時間)","schedule":"Sat Mar 28 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[01:21:21.311] Server  LOG     ✓ Compiled in 92ms
-[01:21:32.414] Server  LOG     ✓ Compiled in 17ms
-[01:21:40.311] Server  LOG     ✓ Compiled in 18ms
-[01:21:56.970] Server  LOG     ✓ Compiled in 12ms
-[01:22:25.277] Server  LOG     ✓ Compiled in 25ms
-[01:22:30.511] Browser LOG     {"endDate":"Tue Apr 14 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Thu Mar 19 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[01:25:02.053] Server  LOG     ✓ Compiled in 20ms
-[01:30:54.912] Server  LOG     ✓ Compiled in 279ms
-[01:31:15.742] Server  LOG     ✓ Compiled in 41ms
-[01:31:48.108] Server  LOG     ✓ Compiled in 10ms
-[01:31:53.680] Browser LOG     {"endDate":"Tue Apr 07 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 11 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[01:32:56.911] Server  LOG     ✓ Compiled in 18ms
-[01:33:05.812] Server  LOG     ✓ Compiled in 12ms
-[01:33:31.512] Server  LOG     ✓ Compiled in 21ms
-[01:34:40.061] Server  LOG     ✓ Compiled in 17ms
-[01:34:51.464] Server  LOG     ✓ Compiled in 13ms
-[01:35:50.471] Server  LOG     ✓ Compiled in 18ms
-[01:36:27.021] Server  LOG     ✓ Compiled in 33ms
-[01:40:49.286] Server  LOG     ✓ Compiled in 717ms
-[01:40:49.390] Browser ERROR   ./src/components/common/CustTimePicker.tsx:56:21
-Parsing ecmascript source code failed
-  54 |         size,
-  55 |         height,
-> 56 |         ampm = false;
-     |                     ^
-  57 |         views = ['hours', 'minutes', 'seconds']
-  58 |     }: CustTimePickerProps
-  59 | ) {
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
 
-Expected ',', got ';'
 
 Import traces:
   Client Component Browser:
-    ./src/components/common/CustTimePicker.tsx [Client Component Browser]
-    ./src/components/page/TimePicker/TimePickerDemo1.tsx [Client Component Browser]
-    ./src/components/page/TimePicker/TimePickerPage.tsx [Client Component Browser]
-    ./src/components/page/TimePicker/TimePickerPage.tsx [Server Component]
-    ./src/app/(login)/dateAndTimePicker/timePicker/page.tsx [Server Component]
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
 
   Client Component SSR:
-    ./src/components/common/CustTimePicker.tsx [Client Component SSR]
-    ./src/components/page/TimePicker/TimePickerDemo1.tsx [Client Component SSR]
-    ./src/components/page/TimePicker/TimePickerPage.tsx [Client Component SSR]
-    ./src/components/page/TimePicker/TimePickerPage.tsx [Server Component]
-    ./src/app/(login)/dateAndTimePicker/timePicker/page.tsx [Server Component]
-[01:40:57.850] Server  LOG     ✓ Compiled in 190ms
-[01:41:20.564] Server  LOG     ✓ Compiled in 14ms
-[01:41:27.569] Server  LOG     ✓ Compiled in 19ms
-[01:42:16.918] Server  LOG     ✓ Compiled in 10ms
-[01:42:24.066] Server  LOG     ✓ Compiled in 28ms
-[01:49:02.334] Server  LOG     ✓ Compiled in 11ms
-[01:49:51.234] Server  LOG     ✓ Compiled in 36ms
-[01:50:11.464] Server  LOG     ✓ Compiled in 15ms
-[01:50:16.384] Server  LOG     ✓ Compiled in 9ms
-[01:53:14.237] Server  LOG     ✓ Compiled in 14ms
-[01:53:56.920] Server  LOG     ✓ Compiled in 13ms
-[01:55:59.916] Server  LOG     ✓ Compiled in 31ms
-[01:57:24.338] Server  LOG     ✓ Compiled in 14ms
-[01:57:25.920] Server  LOG     ✓ Compiled in 11ms
-[01:58:46.697] Server  LOG     ✓ Compiled in 22ms
-[01:59:34.902] Server  LOG     ✓ Compiled in 155ms
-[02:00:21.615] Server  LOG     ✓ Compiled in 21ms
-[02:00:37.255] Server  LOG     ✓ Compiled in 268ms
-[02:00:48.766] Browser LOG     {"endDate":"Wed Apr 15 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Mar 18 2026 00:00:00 GMT+0800 (香港標準時間)"}
-[02:01:14.551] Server  LOG     ✓ Compiled in 10ms
-[02:01:46.347] Server  LOG     ✓ Compiled in 120ms
-[02:02:19.731] Server  LOG     ✓ Compiled in 17ms
-[02:02:50.149] Server  LOG     ✓ Compiled in 14ms
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.295] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.298] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.304] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.313] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.316] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.320] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.323] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.328] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.332] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.336] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.339] Server  ERROR   ⨯ ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.345] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.347] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.349] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.351] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.367] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.369] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.371] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.373] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.375] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.377] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.379] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.381] Server  ERROR   ⨯ ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:22.399] Server  LOG     ✓ Compiled in 205ms
+[00:14:22.568] Browser ERROR   ./src/components/page/textField/TextFieldAPITable.tsx:3:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+  2 |
+> 3 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Box } from "@mui/material";
+  5 |
+  6 | interface PropDesc {
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component Browser]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/textField/TextFieldAPITable.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Client Component SSR]
+    ./src/components/page/textField/textFieldPage.tsx [Server Component]
+    ./src/app/(login)/inputField/textField/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:22.568] Browser ERROR   ./src/components/page/Table/TableDemo1.tsx:2:1
+Module not found: Can't resolve '@/components/common/CustTable'
+  1 | "use client"
+> 2 | import CustTable from "@/components/common/CustTable";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Client } from "../../templateData/client.types"
+  4 | import { clients } from "../../templateData/client.types"
+  5 | import { useState } from "react";
+
+Import map: aliased to relative './src/components/common/CustTable' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Client Component Browser]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/page/Table/TableDemo1.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Client Component SSR]
+    ./src/components/page/Table/TablePage.tsx [Server Component]
+    ./src/app/(login)/table/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:07.988] Server  LOG     ✓ Compiled in 69ms
+[00:16:08.789] Server  LOG     ✓ Compiled in 25ms
+[00:16:14.082] Server  LOG     ✓ Compiled in 18ms
+[00:22:42.523] Server  LOG     ✓ Compiled in 30ms
+[00:26:45.929] Server  LOG     ✓ Compiled in 20ms
+[00:31:18.882] Server  LOG     ✓ Compiled in 118ms
+[00:31:30.174] Server  LOG     ✓ Compiled in 24ms
+[00:32:27.674] Server  LOG     ✓ Compiled in 26ms
+[00:34:07.176] Server  LOG     ✓ Compiled in 26ms
+[00:34:20.261] Server  LOG     ✓ Compiled in 20ms
+[00:35:36.266] Server  LOG     ✓ Compiled in 11ms
+[00:35:47.666] Server  LOG     ✓ Compiled in 14ms
+[00:35:57.283] Server  LOG     ✓ Compiled in 13ms
+[00:37:07.842] Server  LOG     ✓ Compiled in 22ms
+[00:38:00.883] Server  LOG     ✓ Compiled in 22ms
+[00:38:43.922] Server  LOG     ✓ Compiled in 21ms
+[00:38:55.266] Server  LOG     ✓ Compiled in 14ms
+[00:39:54.053] Server  LOG     ✓ Compiled in 26ms
+[00:40:20.720] Server  LOG     ✓ Compiled in 26ms
+[00:41:49.520] Server  LOG     ✓ Compiled in 14ms
+[00:42:03.365] Server  LOG     ✓ Compiled in 24ms
+[00:45:03.080] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.082] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.084] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.085] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.088] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.090] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.092] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.093] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.095] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.096] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.099] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.100] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:03.118] Server  LOG     ✓ Compiled in 186ms
+[00:45:03.873] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:11.876] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:12.883] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:13.797] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.798] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.799] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:13.801] Server  ERROR   ⨯ ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:14.884] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:14.884] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:14.884] Browser ERROR   [next-auth][error][CLIENT_FETCH_ERROR] 
+https://next-auth.js.org/errors#client_fetch_error Unexpected token '<', "<!DOCTYPE "... is not valid JSON {"error":{"message":"Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON","name":"SyntaxError","stack":"SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"},"message":"Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON","url":"/muitools/api/auth/session"}
+[00:45:14.884] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:19.884] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:30.012] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.015] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.018] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.020] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.025] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.027] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.029] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.030] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.032] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.033] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.035] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.036] Server  ERROR   ⨯ ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:30.067] Server  LOG     ✓ Compiled in 359ms
+[00:45:30.871] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:30.871] Browser ERROR   ./src/components/page/Select/selectPage.tsx:5:1
+Module not found: Can't resolve './SelectAPITable'
+  3 | import { Box, Container } from "@mui/material"
+  4 | import SelectDemo from "./SelectDemo"
+> 5 | import SelectAPITable from "./SelectAPITable"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function SelectPage(){
+  8 |     return(
+
+Import trace:
+  Server Component:
+    ./src/components/page/Select/selectPage.tsx
+    ./src/app/(login)/inputField/select/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:42.217] Server  LOG     ✓ Compiled in 179ms
+[00:45:42.884] Browser ERROR   ./src/components/page/textField/textFieldPage.tsx:11:1
+Module not found: Can't resolve './TextFieldAPITable'
+   9 | import ColorParam from "./ColorParam";
+  10 | import IconTextField from "./IconTextField";
+> 11 | import TextFieldAPITable from "./TextFieldAPITable";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function TextFieldComponent() {
+  14 |
+
+Import trace:
+  Server Component:
+    ./src/components/page/textField/textFieldPage.tsx
+    ./src/app/(login)/inputField/textField/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:56.537] Server  LOG     ✓ Compiled in 227ms
+[00:48:18.251] Server  LOG     ✓ Compiled in 32ms
+[00:49:33.841] Server  LOG     ✓ Compiled in 23ms
+[00:50:50.581] Server  LOG     ✓ Compiled in 460ms
+[00:51:23.541] Server  LOG     ✓ Compiled in 15ms
+[00:51:45.405] Server  LOG     ✓ Compiled in 14ms
+[00:52:05.491] Server  LOG     ✓ Compiled in 13ms
+[00:52:17.654] Server  LOG     ✓ Compiled in 19ms
+[00:52:39.974] Server  LOG     ✓ Compiled in 14ms
+[00:52:49.711] Server  LOG     ✓ Compiled in 9ms
+[00:53:37.288] Server  LOG     ✓ Compiled in 35ms
+[00:53:44.083] Server  LOG     ✓ Compiled in 12ms
+[07:13:27.170] Server  LOG     ✓ Compiled in 2.4s
+[07:14:14.689] Server  LOG     ✓ Compiled in 20ms
+[25:37:33.230] Server  LOG     ✓ Compiled in 75ms
+[25:38:13.194] Server  LOG     ✓ Compiled in 1296ms
+[25:38:22.228] Server  LOG     ✓ Compiled in 14ms
+[25:40:56.512] Server  LOG     ✓ Compiled in 55ms
+[26:36:34.472] Server  LOG     ✓ Compiled in 134ms
+[26:36:37.735] Server  LOG     ✓ Compiled in 14ms
+[26:36:42.403] Server  LOG     ✓ Compiled in 23ms
+[26:36:45.938] Server  LOG     ✓ Compiled in 18ms
+[26:36:49.335] Server  LOG     ✓ Compiled in 17ms
+[26:37:09.137] Browser LOG     {"endDate":"Tue Apr 21 2026 00:00:00 GMT+0800 (香港標準時間)","startDate":"Wed Apr 15 2026 00:00:00 GMT+0800 (香港標準時間)"}
+[26:40:21.302] Server  LOG     ✓ Compiled in 60ms
+[26:41:47.037] Server  LOG     ✓ Compiled in 21ms
+[26:44:40.737] Server  LOG     ✓ Compiled in 13ms
+[26:44:59.697] Server  LOG     ✓ Compiled in 28ms
+[26:45:02.485] Server  LOG     ✓ Compiled in 22ms
+[26:45:43.620] Server  LOG     ✓ Compiled in 1712ms
+[26:47:03.171] Server  LOG     ✓ Compiled in 586ms
+[30:03:14.705] Server  LOG     ✓ Compiled in 2.1s
+[30:03:23.703] Server  LOG     ✓ Compiled in 31ms

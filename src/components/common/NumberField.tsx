@@ -5,7 +5,7 @@ import { Controller, UseFormReturn } from "react-hook-form";
 import { useTheme } from "@mui/material/styles";
 
 // Extend with MUI props for flexibility, omitting conflicts
-interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" | "rows" | "maxRows" | "margin"> {
+interface CustomNumberProps  {
     placeholder?: string;
     size?: "medium" | "small"; // medium is default
     variant?: "outlined" | "filled" | "standard"; // outlined is default
@@ -67,7 +67,7 @@ export default function NumberField({
     min,
     step,
     ...rest // Spread remaining TextFieldProps
-}: CustomTextFieldProps) {
+}: CustomNumberProps) {
 
 
     const theme = useTheme();

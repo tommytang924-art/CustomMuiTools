@@ -5,8 +5,8 @@ import { Controller, UseFormReturn } from "react-hook-form";
 import { useTheme } from "@mui/material/styles";
 
 // Extend with MUI props for flexibility, omitting conflicts
-interface CustomTextFieldProps extends Omit<TextFieldProps, "variant" | "size" | "rows" | "maxRows" | "margin"> {
-  placeholder?: string;
+interface CustomTextFieldProps{
+  placeholder: string;
   size?: "medium" | "small"; // medium is default
   variant?: "outlined" | "filled" | "standard"; // outlined is default
   label?: string;

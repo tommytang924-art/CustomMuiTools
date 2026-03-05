@@ -1,5 +1,5 @@
 "use client"
-import CustTable from "@/components/common/CustTable";
+import CustTableWithSearch from "@/components/common/CustTableWithSearch";
 import { Client } from "../../templateData/client.types"
 import { clients } from "../../templateData/client.types"
 import { useState } from "react";
@@ -12,8 +12,8 @@ import CodeViewer from "@/components/common/CodeViewer";
 interface HeadCell {
     id: keyof Client;
     label: string;
-    disableSorting?: boolean; // Default is true (disabled)
-    disableSearch?: boolean; // Default is false (search enabled)
+    disableSorting: boolean; // Default is true (disabled)
+    disableSearch: boolean; // Default is false (search enabled)
 }
 
 const schema = yup.object({
@@ -186,7 +186,8 @@ export default function Table() {
 
             return(
                 <>
-                    <CustTable
+                    <CustTableWithSearch
+                        needSelect={true}
                         rows={clients}
                         headCells={headCells}
                         selectedRowId={selectedRowId}
@@ -195,7 +196,7 @@ export default function Table() {
                         usePagination={true}
                         rowPerPage={5}
                         rowPerPageOpt={[5, 10, 25]}
-                    />
+                        />
                     <EditFormComponent
                         form={form}
                         fields={Formfields}
@@ -258,7 +259,8 @@ export default function Table() {
 
     return (
         <>
-            <CustTable
+            <CustTableWithSearch
+                needSelect={true}
                 rows={clients}
                 headCells={headCells}
                 selectedRowId={selectedRowId}

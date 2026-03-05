@@ -6,8 +6,7 @@ import { visuallyHidden } from '@mui/utils';
 interface HeadCell {
     id: string;
     label: string;
-    disableSorting?: boolean; // Default is true (disabled)
-    disableSearch?: boolean; // Default is false (search enabled)
+    disableSorting: boolean; // Default is true (disabled)
 }
 
 interface Data {
@@ -17,8 +16,9 @@ interface Data {
 interface TableProps {
     rows: Data[];
     headCells: readonly HeadCell[];
-    selectedRowId: string;
-    handleRowClick: (id: string) => void;
+    needSelect: boolean;
+    selectedRowId?: string;
+    handleRowClick?: (id: string) => void;
     maxHeight?: string | number;
     hoverColor?: string;
     selectedColor?: string;
@@ -87,6 +87,7 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
         >
             <TableRow sx={{ height: "50px" }}>
                 {headCells.map((headCell) => (
+                
                     <TableCell
                         key={headCell.id}
                         sortDirection={orderBy === headCell.id && !headCell.disableSorting ? order : false}
@@ -116,7 +117,7 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
                     </TableCell>
                 ))}
             </TableRow>
-            <TableRow>
+            {/* <TableRow>
                 {headCells.map((headCell) => (
                     <TableCell
                         key={`filter-${headCell.id}`}
@@ -141,7 +142,7 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
                         ) : null}
                     </TableCell>
                 ))}
-            </TableRow>
+            </TableRow> */}
         </TableHead>
     );
 }
@@ -159,6 +160,7 @@ export default function TableComponent({
     usePagination = false,
     rowPerPage = 5,
     rowPerPageOpt = [5, 10, 20],
+    needSelect
 }: TableProps) {
     const [order, setOrder] = useState<Order>('asc');
     const [orderBy, setOrderBy] = useState<string>('');
@@ -222,63 +224,66 @@ export default function TableComponent({
                         tableHeaderBgColor={tableHeaderBgColor}
                     />
                     <TableBody>
-                        {sortedRows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => {
-                            const isSelected = selectedRowId === row.id;
+                        {(usePagination ? sortedRows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage) : sortedRows).map((row, index) => {
+                            const isSelected = needSelect && selectedRowId === row.id;
                             return (
                                 <TableRow
                                     key={row.id || index}
                                     hover
-                                    onClick={() => handleRowClick(row.id)}
+                                    {...needSelect && handleRowClick && {
+                                        onClick: () => handleRowClick(row.id)
+                                    }
+                                    }
                                     selected={isSelected}
                                     sx={{
-                                        cursor: 'pointer',
+                                        cursor: needSelect ? 'pointer' : 'default',
                                         '&.Mui-selected': {
-                                            backgroundColor: `${selectedColor}`,
+                                            backgroundColor: needSelect ? `${selectedColor}` : 'transparent',
                                         },
                                         '&.Mui-selected:hover': {
-                                            backgroundColor: `${hoverColor}`,
+                                            backgroundColor: needSelect ? `${hoverColor}` : 'transparent',
                                         },
                                         height: `${rowHeight}`
                                     }}
                                 >
-                        {headCells.map((headCell) => (
-                            <TableCell
-                                key={`${row.id}-${headCell.id}`}
-                            >
-                                {row[headCell.id]}
-                            </TableCell>
-                        ))}
-                    </TableRow>
-                    );
+                                    {headCells.map((headCell) => (
+                                        <TableCell
+                                            key={`${row.id}-${headCell.id}`}
+                                        >
+                                            {row[headCell.id]}
+                                        </TableCell>
+                                    ))}
+                                </TableRow>
+                            );
                         })}
-                    {sortedRows.length === 0 && (
-                        <TableRow>
-                            <TableCell
-                                colSpan={headCells.length}
-                                align="center"
-                                sx={{ padding: "24px" }}
-                            >
-                                No data found
-                            </TableCell>
-                        </TableRow>
-                    )}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                        {sortedRows.length === 0 && (
+                            <TableRow>
+                                <TableCell
+                                    colSpan={headCells.length}
+                                    align="center"
+                                    sx={{ padding: "24px" }}
+                                >
+                                    No data found
+                                </TableCell>
+                            </TableRow>
+                        )}
+                    </TableBody>
+                </Table>
+            </TableContainer>
             {
 
-        usePagination && (
-            <TablePagination
-                rowsPerPageOptions={rowPerPageOpt}
-                component="div"
-                count={rows.length}
-                rowsPerPage={rowPerPage}
-                page={page}
-                onPageChange={handleChangePage}
-                onRowsPerPageChange={handleChangeRowsPerPage}
-            />
-        )
-    }
+                usePagination && (
+                    <TablePagination
+                        rowsPerPageOptions={rowPerPageOpt}
+                        component="div"
+                        count={rows.length}
+                        rowsPerPage={rowPerPage}
+                        page={page}
+                        onPageChange={handleChangePage}
+                        onRowsPerPageChange={handleChangeRowsPerPage}
+                    />
+                )
+            }
 
         </Paper >
     );
