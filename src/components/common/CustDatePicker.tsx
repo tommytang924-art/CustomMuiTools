@@ -103,7 +103,7 @@ export default function CustomDatePicker({
                                         error: !!error,
                                         size: size,
                                         inputProps: {
-                                            style: { height: height, width: width ? width : "100%" }, // FIXED: Adjusted to use width prop
+                                            style: { width: width ? width : "100%" }, // FIXED: Adjusted to use width prop
                                         },
                                         helperText: error?.message,
                                         InputProps: {

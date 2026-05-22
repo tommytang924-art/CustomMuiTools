@@ -65,7 +65,7 @@ const headCells: readonly HeadCell[] = [
         id: "address",
         label: "Address",
         disableSorting: false,
-        disableSearch: true,
+        disableSearch: false,
     },
 ];
 
@@ -115,7 +115,7 @@ export default function Table() {
                 disableSorting: false,
                 disableSearch: false,
             },
-                {
+            {
                 id: "dateOfBirth",
                 label: "Birth",
                 disableSorting: false,
@@ -131,7 +131,7 @@ export default function Table() {
                 id: "address",
                 label: "Address",
                 disableSorting: false,
-                disableSearch: true,
+                disableSearch: false,
             },
         ];
 

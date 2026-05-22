@@ -1,14 +1,10 @@
 {
   "/(login)/dateAndTimePicker/datePicker/page": "app/(login)/dateAndTimePicker/datePicker/page.js",
   "/(login)/dateAndTimePicker/dateRange/page": "app/(login)/dateAndTimePicker/dateRange/page.js",
-  "/(login)/dateAndTimePicker/timePicker/page": "app/(login)/dateAndTimePicker/timePicker/page.js",
   "/(login)/form/page": "app/(login)/form/page.js",
   "/(login)/home/page": "app/(login)/home/page.js",
-  "/(login)/inputField/numberField/page": "app/(login)/inputField/numberField/page.js",
-  "/(login)/inputField/select/page": "app/(login)/inputField/select/page.js",
   "/(login)/inputField/textField/page": "app/(login)/inputField/textField/page.js",
   "/(login)/table/page": "app/(login)/table/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/login/page": "app/login/page.js"
 }

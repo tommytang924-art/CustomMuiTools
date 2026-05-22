@@ -1,6 +1,6 @@
 "use client"
 
-import CustTableNormal from "@/components/common/CustTableNormal";
+import CustTableWithSearch from "@/components/common/CustTableWithSearch";
 import { Box } from "@mui/material";
 
 interface PropDesc {
@@ -14,6 +14,7 @@ interface HeadCell {
     id: keyof PropDesc;
     label: string;
     disableSorting: boolean;   // default true → sorting disabled
+    disableSearch: boolean;
 }
 
 export default function FormPropsTable() {
@@ -24,21 +25,25 @@ export default function FormPropsTable() {
             id: 'name',
             label: 'Prop Name',
             disableSorting: true,    // usually the most useful to sort
+            disableSearch: true,
         },
         {
             id: 'type',
             label: 'Type',
             disableSorting: true,
+            disableSearch: true,
         },
         {
             id: 'required',
             label: 'Required',
             disableSorting: false,
+            disableSearch: true,
         },
         {
             id: 'description',
             label: 'Description',
             disableSorting: true,
+            disableSearch: true,
         },
     ];
 
@@ -99,7 +104,7 @@ export default function FormPropsTable() {
             <Box>
                 <h3>Form Props</h3>
             </Box>
-            <CustTableNormal
+            <CustTableWithSearch
                 rows={data}
                 headCells={headCells}
                 maxHeight={"500px"}

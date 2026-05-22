@@ -1,5 +1,5 @@
 "use client"
-import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TableSortLabel, TextField } from "@mui/material";
+import { Box, Pagination, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TableSortLabel, TextField } from "@mui/material";
 import { useState, useMemo } from 'react';
 import { visuallyHidden } from '@mui/utils';
 
@@ -103,7 +103,8 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
                             headCell.label
                         ) : (
                             <TableSortLabel
-                                active={orderBy === headCell.id}
+                                active={true}
+                                hideSortIcon={false}
                                 direction={orderBy === headCell.id ? order : 'asc'}
                                 onClick={createSortHandler(headCell.id, headCell.disableSorting)}
                             >
@@ -118,35 +119,71 @@ function EnhancedTableHead(props: EnhancedTableHeadProps) {
                     </TableCell>
                 ))}
             </TableRow>
-            <TableRow>
-                {headCells.map((headCell) => (
-                    <TableCell
-                        key={`filter-${headCell.id}`}
-                        sx={{ backgroundColor: "#f5f5f5", padding: "8px", minWidth: "200px" }}
-                    >
-                        {!headCell.disableSearch ? (
-                            <TextField
-                                size="small"
-                                placeholder="Search"
-                                value={filters[headCell.id] || ''}
-                                onChange={(e) => handleFilterChange(headCell.id, e.target.value)}
-                                fullWidth
-                                sx={{
-                                    backgroundColor: "white",
-                                    '& .MuiOutlinedInput-root': {
-                                        '& fieldset': {
-                                            borderColor: '#d0d0d0',
-                                        },
-                                    }
-                                }}
-                            />
-                        ) : null}
-                    </TableCell>
-                ))}
-            </TableRow>
+            {headCells.some(headCell => !headCell.disableSearch) && (
+                <TableRow>
+                    {headCells.map((headCell) => (
+                        <TableCell
+                            key={`filter-${headCell.id}`}
+                            sx={{ backgroundColor: "#f5f5f5", padding: "8px", minWidth: "200px" }}
+                        >
+                            {!headCell.disableSearch ? (
+                                <TextField
+                                    size="small"
+                                    placeholder="Search"
+                                    value={filters[headCell.id] || ''}
+                                    onChange={(e) => handleFilterChange(headCell.id, e.target.value)}
+                                    fullWidth
+                                    sx={{
+                                        backgroundColor: "white",
+                                        '& .MuiOutlinedInput-root': {
+                                            '& fieldset': {
+                                                borderColor: '#d0d0d0',
+                                            },
+                                        }
+                                    }}
+                                />
+                            ) : null}
+                        </TableCell>
+                    ))}
+                </TableRow>
+            )}
         </TableHead>
     );
 }
+
+interface CustomPaginationActionsProps {
+    count: number;
+    page: number;
+    rowsPerPage: number;
+    onPageChange: (
+        event: React.MouseEvent<HTMLButtonElement> | null,
+        newPage: number,
+    ) => void;
+}
+
+function CustomPaginationActions(props: CustomPaginationActionsProps) {
+    const { count, page, rowsPerPage, onPageChange } = props;
+
+    const totalPages = Math.ceil(count / rowsPerPage);
+
+    const handlePageChange = (event: React.ChangeEvent<unknown>, newPage: number) => {
+        // Pagination component is 1-based, TablePagination is 0-based
+        onPageChange(null, newPage - 1);
+    };
+
+    return (
+        <Box sx={{ flexShrink: 0, ml: 2.5 }}>
+            <Pagination
+                count={totalPages}
+                page={page + 1}
+                onChange={handlePageChange}
+                shape="circular"
+            />
+        </Box>
+    );
+}
+
+
 
 export default function TableSearchComponent({
     rows,
@@ -166,6 +203,7 @@ export default function TableSearchComponent({
     const [order, setOrder] = useState<Order>('asc');
     const [orderBy, setOrderBy] = useState<string>('');
     const [filters, setFilters] = useState<{ [key: string]: string }>({});
+    const [search, setSearch] = useState('');
 
     const handleRequestSort = (event: React.MouseEvent<unknown>, property: string) => {
         const isAsc = orderBy === property && order === 'asc';
@@ -277,8 +315,9 @@ export default function TableSearchComponent({
                     <TablePagination
                         rowsPerPageOptions={rowPerPageOpt}
                         component="div"
-                        count={rows.length}
-                        rowsPerPage={rowPerPage}
+                        ActionsComponent={CustomPaginationActions}
+                        count={sortedRows.length}
+                        rowsPerPage={rowsPerPage}
                         page={page}
                         onPageChange={handleChangePage}
                         onRowsPerPageChange={handleChangeRowsPerPage}

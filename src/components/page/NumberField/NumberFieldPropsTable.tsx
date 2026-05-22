@@ -1,5 +1,5 @@
 "use client"
-import CustTableNormal from "@/components/common/CustTableNormal";
+import CustTableWithSearch from "@/components/common/CustTableWithSearch";
 import { Box } from "@mui/material";
 
 interface PropDesc {
@@ -13,15 +13,16 @@ interface HeadCell {
     id: keyof PropDesc;
     label: string;
     disableSorting: boolean;   // default true → sorting disabled
+    disableSearch:boolean;
 }
 
 export default function NumberFieldPropsTable() {
 
     const headCells: readonly HeadCell[] = [
-        { id: 'name', label: 'Name', disableSorting: true },
-        { id: 'type', label: 'Type', disableSorting: true },
-        { id: 'required', label: 'Required', disableSorting: false },
-        { id: 'description', label: 'Description', disableSorting: true },
+        { id: 'name', label: 'Name', disableSorting: true, disableSearch: true },
+        { id: 'type', label: 'Type', disableSorting: true,disableSearch: true },
+        { id: 'required', label: 'Required', disableSorting: false, disableSearch: true },
+        { id: 'description', label: 'Description', disableSorting: true, disableSearch: true },
     ];
 
     const data: PropDesc[] = [
@@ -206,7 +207,7 @@ export default function NumberFieldPropsTable() {
             <Box>
                 <h3>Number Field Props</h3>
             </Box>
-                <CustTableNormal
+                <CustTableWithSearch
                     rows={data}
                     headCells={headCells}
                     maxHeight={"500px"}

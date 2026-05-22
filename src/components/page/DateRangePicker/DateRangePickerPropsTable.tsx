@@ -1,5 +1,5 @@
 "use client"
-import CustTableNormal from "@/components/common/CustTableNormal";
+import CustTableWithSearch from "@/components/common/CustTableWithSearch";
 import { Box } from "@mui/material";
 
 interface PropDesc {
@@ -13,6 +13,7 @@ interface HeadCell {
     id: keyof PropDesc;
     label: string;
     disableSorting: boolean; // Default is true (disabled)
+    disableSearch: boolean;
 }
 
 export default function DateRangePickerPropsTable() {
@@ -22,21 +23,25 @@ export default function DateRangePickerPropsTable() {
             id: 'name',
             label: 'Prop Name',
             disableSorting: true,    // usually want to allow sorting by name
+            disableSearch:true,
         },
         {
             id: 'type',
             label: 'Type',
             disableSorting: true,     // sorting by type string is rarely useful
+            disableSearch:true,
         },
         {
             id: 'required',
             label: 'Required',
             disableSorting: false,     // usually just Yes/No → sorting not very meaningful
+            disableSearch:true,
         },
         {
             id: 'description',
             label: 'Description',
             disableSorting: true,     // long text → sorting doesn't make sense
+            disableSearch:true,
         }
     ];
 
@@ -78,7 +83,7 @@ export default function DateRangePickerPropsTable() {
             <Box>
                 <h3>Date Range Picker Props</h3>
             </Box>
-            <CustTableNormal
+            <CustTableWithSearch
                 rows={data}
                 headCells={headCells}
                 maxHeight={"500px"}
